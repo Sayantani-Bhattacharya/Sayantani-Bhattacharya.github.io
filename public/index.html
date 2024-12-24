@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=34357&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Stella&#39;s portfolio" />
+<meta property="og:description" content="Text about my cool site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:34357/" /><meta property="og:site_name" content="Hugo Profile" />
+
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Stella&#39;s portfolio"/>
+<meta name="twitter:description" content="Text about my cool site"/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content=Text&#32;about&#32;my&#32;cool&#32;site>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+  <title>
+Stella&#39;s portfolio
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;        
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Stella&#39;s portfolio
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle" style="min-height: initial !important;">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    Hi, my name is
+                </span>
+                <h2>
+                    Stella Yu.
+                </h2>
+                <h3>
+                    A passionate Robotics Software &amp; Mechanical Engineer.
+                </h3>
+                <p class="hero-content">
+                    I leverage my coding, design, and analysis skills to construct robots that liberate people&rsquo;s hands.
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="/docs/Jialu_Yu__Engineer_Internship.pdf" class="btn" download
+			  >
+                            Resume
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://github.com/NuCapybara" target="_blank" class="btn social-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/jialu-yu/" target="_blank" class="btn social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+
+    
+</span></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="/images/Nao.png"
+                            class="img-thumbnail mx-auto"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">About Me</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="/images/stella_profile1.jpg" class="img-thumbnail mx-auto rounded-circle" alt="">
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                <p>I am a robotics software &amp; mechanical engineer with a passion for robotics development. My undergraduate background encompasses both mechanical engineering and computer science. I hold a strong interest in the field of assistive and mobile robots. Currently, I am pursuing a Master&rsquo;s degree in Robotics at <a href="https://www.mccormick.northwestern.edu/robotics/">Northwestern University</a> in Evanston, Illinois.</p>
+<p>I am currently working on a robotics project that involves an assistive robot designed to reduce nurse&rsquo;s work by helping hydrate a patient&rsquo;s mouth without colliding with other medical devices (e.g., tubes) on the patient&rsquo;s face.</p>
+
+
+                
+                Here are a few technologies I&#39;ve been working with recently:
+                <ul>
+                    
+                    <li>ROS2</li>
+                    
+                    <li>Python</li>
+                    
+                    <li>Solidworks</li>
+                    
+                    <li>C++</li>
+                    
+                    <li>Computer Vision</li>
+                    
+                    <li>SLAM (Simultaneous localization and mapping)</li>
+                    
+                </ul>
+                <div>
+                    <a href="#projects" class="btn"> Learn More About My Projects
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Experience</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='NeuRRo-Lab-at-University-of-Michigan-Jul-2022---Mar-2023-tab'
+                                data-bs-target='#pills-NeuRRo-Lab-at-University-of-Michigan-Jul-2022---Mar-2023'
+                                aria-controls='NeuRRo-Lab-at-University-of-Michigan-Jul-2022---Mar-2023' 
+                            >
+                                NeuRRo Lab at University of Michigan
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='TechLab-at-MCity-Sep-2020---Dec-2021-tab'
+                                data-bs-target='#pills-TechLab-at-MCity-Sep-2020---Dec-2021' 
+                                aria-controls='TechLab-at-MCity-Sep-2020---Dec-2021'
+                            >
+                                TechLab at MCity
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Abbott-Laboratories-Jun-2021---Aug-2021-tab'
+                                data-bs-target='#pills-Abbott-Laboratories-Jun-2021---Aug-2021' 
+                                aria-controls='Abbott-Laboratories-Jun-2021---Aug-2021'
+                            >
+                                Abbott Laboratories
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-NeuRRo-Lab-at-University-of-Michigan-Jul-2022---Mar-2023'
+                            aria-labelledby='pills-NeuRRo-Lab-at-University-of-Michigan-Jul-2022---Mar-2023-tab'
+                        >
+                            <div>
+                                <span class="h4">Student Researcher</span>
+                                <small>-</small>
+                                <a href="https://neurro-lab.engin.umich.edu/" target="_blank">NeuRRo Lab at University of Michigan</a>
+                                <div class="pb-1">
+                                    <small>Jul 2022 - Mar 2023</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Working&#32;as&#32;a&#32;Student&#32;Researcher&#32;at&#32;NeuRRo&#32;Lab&#32;at&#32;University&#32;of&#32;Michigan
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <p>I was working as a student researcher on the <a href="https://neurro-lab.engin.umich.edu/research/current-projects">Semi-Passive Rehabilitation robot</a>
+tackling upper extremity rehabilitation.</p>
+<ul>
+<li>Integrating a game handle with rotary encoder into the robots.</li>
+<li>CAD design on Hand Motion Coupling System under collaboration settings.</li>
+<li>Engineering a medical recliner for patients using the robot.</li>
+</ul>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-TechLab-at-MCity-Sep-2020---Dec-2021'
+                            aria-labelledby='pills-TechLab-at-MCity-Sep-2020---Dec-2021-tab'
+                        >
+                            <div>
+                                <span class="h4">Student Software Developer</span>
+                                <small>-</small>
+                                <a href="https://cfe.umich.edu/perot-jain-techlab-at-mcity/" target="_blank">TechLab at MCity</a>
+                                
+                                <div class="pb-1">
+                                    <small>Sep 2020 - Dec 2021</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Student&#32;Software&#32;Developer&#32;at&#32;TechLab&#32;at&#32;MCity
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>Developed a traffic light classification system to enhance semi-autonomous vehicle obstacle detection in challenging lighting and weather conditions, while actively collaborating within a team setting.</p>
+<ul>
+<li>Gathered a dataset of 10K+ images of traffic lights using RGB and IR sensors</li>
+<li>Built a custom model to detect and label the streetlights automatically.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Abbott-Laboratories-Jun-2021---Aug-2021'
+                            aria-labelledby='pills-Abbott-Laboratories-Jun-2021---Aug-2021-tab'
+                        >
+                            <div>
+                                <span class="h4">OPDP Operations Intern</span>
+                                <small>-</small>
+                                <a href="https://www.abbott.com/" target="_blank">Abbott Laboratories</a>
+                                
+                                <div class="pb-1">
+                                    <small>Jun 2021 - Aug 2021</small>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <p>As an intern, I was responsible for the validation process of the largest Abbott factory, specifically concentrating on the manufacturing process for the Covid Testing kit.</p>
+<ul>
+<li>Brought the largest Abbott factory’s calibration processes into compliance with new QSB-R00 requirements.</li>
+<li>Implemented $20,000 yearly cost savings by designing a new instruments calibration system.</li>
+<li>Conducted heat study on in-transit products.</li>
+</ul>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Education</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2023 - 2024</small>
+                                </div>
+                                <h5 class="card-title">Master of Robotics</h5>
+                                
+                                
+                                <a href="https://example.org" target="_blank">
+                                    <h6>
+                                    Northwestern University
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>3.6 out of 4.0</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>Course taken:</p>
+<ul>
+<li>Robotics Manipulation</li>
+<li>Embeded systems in Robotics</li>
+<li>Theory of Machines: Dynamics</li>
+<li>Introduction to AI</li>
+<li>Deep Reinforcement Learning</li>
+<li>Active Learning in Robotics</li>
+<li>Sensing, Navigation, and Machine Learning for Robotics</li>
+<li>Soft Robotics</li>
+</ul>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2020-2023</small>
+                                </div>
+                                <h5 class="card-title">Bachelor of Science in Mechanical Engineering</h5>
+                                
+                                
+                                <a href="https://umich.edu/" target="_blank">
+                                    <h6>
+                                    University of Michigan
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>3.3 out of 4.0</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>I co-authored two papers in the Nature Communications and Nature Electronics:</p>
+<ul>
+<li><a href="https://www.nature.com/articles/s41928-022-00843-6">A stretchable epidermal sweat sensing platform with an integrated printed battery and electrochromic display</a></li>
+<li><a href="https://www.nature.com/articles/s41467-021-21701-7">A self-sustainable wearable multi-modular E-textile bioenergy microgrid system</a></li>
+</ul>
+<p>Honors:</p>
+<ul>
+<li>Cum Laude</li>
+<li>University Honors</li>
+<li>Dean&rsquo;s List</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Precision Pin-hunting Meets Playfulness">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/ME495_Nerf_gun1.gif" alt="Precision Pin-hunting Meets Playfulness">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">ROS2</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Path Planning</span>
+                            
+                            <span class="badge badge-secondary">Computer Vision/YOLO</span>
+                            
+                            <span class="badge badge-secondary">AprilTag</span>
+                            
+                            <span class="badge badge-secondary">SolidWorks</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Precision Pin-hunting Meets Playfulness</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The Franka arm autonomously shoots randomly placed pins based on user-specified colors.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Check%20out%20this%20project!&amp;body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/NuCapybara/robot_go_bowling" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="/posts/my-first-post/" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Simulating the Dynamics from Scratch-Mechanical Modeling of a Jack Bouncing within the Box Boundaries.">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/Simulation.gif" alt="Simulating the Dynamics from Scratch-Mechanical Modeling of a Jack Bouncing within the Box Boundaries.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Control</span>
+                            
+                            <span class="badge badge-secondary">Euler-Lagrangian Equation</span>
+                            
+                            <span class="badge badge-secondary">Impact Law</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Simulating the Dynamics from Scratch-Mechanical Modeling of a Jack Bouncing within the Box Boundaries.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The simulation from scratch involves with Python and control theories, including Euler-Lagrangian equations and impact laws.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/NuCapybara/BouncingJack/tree/main" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="/posts/my-second-post/" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Drone Tagging - Release Mechanism Design">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/Drone_Tagging.gif" alt="Drone Tagging - Release Mechanism Design">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Solidworks</span>
+                            
+                            <span class="badge badge-secondary">Fluid dynamics</span>
+                            
+                            <span class="badge badge-secondary">Engineering Analysis and validation</span>
+                            
+                            <span class="badge badge-secondary">Design</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Drone Tagging - Release Mechanism Design</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Designed a new release mechanism that will make the tag more robust to perturbations and external factors, resulting in an increase to the deployment success rate of the biologging tags.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="/posts/my-third-post/" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Robot Nurse - Mouth Care for an Unconscious Resident">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/Robot_Jon.gif" alt="Robot Nurse - Mouth Care for an Unconscious Resident">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">ROS2</span>
+                            
+                            <span class="badge badge-secondary">C&#43;&#43;</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Computer Vision</span>
+                            
+                            <span class="badge badge-secondary">MoveIt</span>
+                            
+                            <span class="badge badge-secondary">Solidworks</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Robot Nurse - Mouth Care for an Unconscious Resident</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The robot nurse will detect patient&#39;s lip and hydrate it with a cotton swab.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/NuCapybara/Winter_Project" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="/posts/my-fourth-post/" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Real-Time Human Motion Prediction for Robotic Teleoperation Using mVAE">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/myo.jpg" alt="Real-Time Human Motion Prediction for Robotic Teleoperation Using mVAE">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">ROS2</span>
+                            
+                            <span class="badge badge-secondary">C&#43;&#43;</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Machine Learning(mVAE)</span>
+                            
+                            <span class="badge badge-secondary">Data Processing</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Real-Time Human Motion Prediction for Robotic Teleoperation Using mVAE</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Using mVAE, this project predicts robot arm movements from human motion for real-time teleoperation, with applications in robotics, autonomous warehousing, and stroke rehabilitation.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/NuCapybara/mVAE_robot_human_training" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="/posts/my-fifth-post/" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Get in Touch</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        If you have any questions or opportunities or just want to say hi, please feel free to contact me by Email <a href="mailto:jialuyu2024@u.northwestern.edu">jialuyu2024@u.northwestern.edu</a> or Tel 734-968-9456.
+                    </div>
+                    
+                    <div class="text-center pt-3">
+                        <a href="mailto:jialuyu2024@u.northwestern.edu" class="btn">
+                            Email Stella
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    
+ 
+
+<div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/NuCapybara" aria-label="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2.7em" height="2.7em" viewBox="0 0 1792 1792">
+                <path
+                    d="M522 1352q-8 9-20-3-13-11-4-19 8-9 20 3 12 11 4 19zm-42-61q9 12 0 19-8 6-17-7t0-18q9-7 17 6zm-61-60q-5 7-13 2-10-5-7-12 3-5 13-2 10 5 7 12zm31 34q-6 7-16-3-9-11-2-16 6-6 16 3 9 11 2 16zm129 112q-4 12-19 6-17-4-13-15t19-7q16 5 13 16zm63 5q0 11-16 11-17 2-17-11 0-11 16-11 17-2 17 11zm58-10q2 10-14 14t-18-8 14-15q16-2 18 9zm964-956v960q0 119-84.5 203.5t-203.5 84.5h-224q-16 0-24.5-1t-19.5-5-16-14.5-5-27.5v-239q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-121-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-86-13.5q-44 113-7 204-79 85-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-40 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 103t.5 68q0 22-11 33.5t-22 13-33 1.5h-224q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" />
+
+                <metadata>
+                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                        <rdf:Description about="https://iconscout.com/legal#licenses"
+                            dc:title="Github, Online, Project, Hosting, Square"
+                            dc:description="Github, Online, Project, Hosting, Square" dc:publisher="Iconscout"
+                            dc:date="2016-12-14" dc:format="image/svg+xml" dc:language="en">
+                            <dc:creator>
+                                <rdf:Bag>
+                                    <rdf:li>Font Awesome</rdf:li>
+                                </rdf:Bag>
+                            </dc:creator>
+                        </rdf:Description>
+                    </rdf:RDF>
+                </metadata>
+            </svg>
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://linkedin.com/in/jialu-yu" aria-label="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width='2.4em' height='2.4em' fill="#fff" aria-label="LinkedIn"
+                viewBox="0 0 512 512">
+                <rect width="512" height="512" fill="#0077b5" rx="15%" />
+                <circle cx="142" cy="138" r="37" />
+                <path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198" />
+                <path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32" />
+            </svg>
+        </a>
+    </span>
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <div class="pb-2">
+                <a href="http://localhost:34357/" title="Stella&#39;s portfolio">
+                    <img alt="Footer logo" src="/fav.png"
+                        height="40px" width="40px">
+                </a>
+            </div>
+            &copy; 2024  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
