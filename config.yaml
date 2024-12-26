@@ -53,23 +53,23 @@ Menus:
       title: resume Link
       url: /resume
       weight: 2    
-# Dropdown menu:
-#   - identifier: dropdown
-#     title: Example dropdown menu
-#     name: Dropdown
-#     weight: 3
-#     - identifier: dropdown1
-#       title: example dropdown 1
-#       name: example 1
-#       url: /#
-#       parent: dropdown
-#       weight: 1
-#     - identifier: dropdown2
-#       title: example dropdown 2
-#       name: example 2
-#       url: /#
-#       parent: dropdown
-#       weight: 2
+  # Dropdown menu:
+  #   - identifier: dropdown
+  #     title: Example dropdown menu
+  #     name: Dropdown
+  #     weight: 3
+  #     - identifier: dropdown1
+  #       title: example dropdown 1
+  #       name: example 1
+  #       url: /#
+  #       parent: dropdown
+  #       weight: 1
+  #     - identifier: dropdown2
+  #       title: example dropdown 2
+  #       name: example 2
+  #       url: /#
+  #       parent: dropdown
+  #       weight: 2
 
 params:
   title: "Hugo Profile"
@@ -89,14 +89,11 @@ params:
   
   # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
-
   # Whether the fade animations on the home page will be enabled
   animate: true
-
   theme:
     # disableThemeToggle: true
     # defaultTheme: "light" # dark
-
   font:
     fontSize: 1rem # default: 1rem
     fontWeight: 400 # default: 400
@@ -111,7 +108,6 @@ params:
   #   secondaryBackgroundColor:
   #   primaryColor:
   #   secondaryColor:
-
   #   darkmode:
   #     textColor:
   #     secondaryTextColor:
@@ -142,11 +138,15 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
-    title: "Stella Yu."
-    subtitle: "A passionate Robotics Software & Mechanical Engineer."
-    content: "I leverage my coding, design, and analysis skills to construct robots that liberate people's hands."
-    image: /images/Nao.png
+    intro: "Hey, I'm"
+    title: "Sayantani Bhattacharya..."
+    # subtitle: "A passionate Robotics Engineer."
+    # content: "I leverage my coding, design, and analysis skills to construct robots that liberate people's hands."
+    image: /images/profilePic-rmv.png
+    taglines: 
+      - "</Robotics Engineer>"
+      - "< Researcher>"
+      - "<Developer>"
     bottomImage:
       enable: false
     # roundImage: true # Make hero image circular | default false
@@ -350,7 +350,6 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/NuCapybara/BouncingJack/tree/main
-
 
       - title: Drone Tagging - Release Mechanism Design
         content: Designed a new release mechanism that will make the tag more robust to perturbations and external factors, resulting in an increase to the deployment success rate of the biologging tags.

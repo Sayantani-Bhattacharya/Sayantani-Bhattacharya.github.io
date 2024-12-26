@@ -39,6 +39,17 @@
   }
 }
 
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #FCD667; }
+}
+
 /* Header animation */
 @keyframes fade-up {
   0% {
@@ -75,6 +86,7 @@ header .navbar.animate {
     line-height: 2rem;
     max-width: 100%;
 }
+
 #hero .content.animate {
     animation: fade-left 1s ease-out;
 }
@@ -87,19 +99,43 @@ header .navbar.animate {
 }
 
 #hero .subtitle {
+    transform: translate(-30%,0); /* Moves left and up respectively*/
     font-size: clamp(14px,5vw,16px);
     opacity: 0.6;
 }
 
 #hero h2 {
+    transform: translate(-30%,0); /* Moves left and up respectively*/
     font-size: clamp(40px, 8vw, 80px);
     color: var(--primary-color) !important;
 }
 
 #hero h3 {
+    transform: translate(-30%,0); /* Moves left and up respectively*/
     font-size: clamp(40px, 8vw, 60px);
     /* color: var(--primary-color) !important; */
     opacity: 0.5;
+}
+
+#hero h4 {
+    transform: translate(80%,0);   /* Moves left and up respectively*/
+    font-size: clamp(20px, 8vw, 40px);
+    color: #FCD667 !important;
+    opacity: 1.0;
+}
+
+/* #hero .image.animate img:hover { */
+#hero h4.animate {
+    /* animation: fade-in 4s ease-in-out; */
+    /* transition: box-shadow 0.3s; */
+    overflow: hidden;
+    border-right: .15em solid #FCD667;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
 }
 
 #hero p {
@@ -108,11 +144,19 @@ header .navbar.animate {
     opacity: 0.8;
 }
 
-#hero .image img {
-    box-shadow:0px 8px 56px rgba(15, 80, 100, 0.16);
+#hero .image img {    
     padding: 0;
-    border: 3px solid var(--secondary-color);
-    border-radius: 1rem;
+    mix-blend-mode: screen;
+    border: none;
+    max-width: none;
+    width:fit-content;     
+    height: 120%;
+    object-fit: cover; 
+    transform: translate(-100%,-20%); /* Moves left and up respectively*/
+    filter: contrast(1.2);        
+    /* mix-blend-mode: difference; */
+    /* background-blend-mode: difference; */
+    display: block;
 }
 
 #hero .image.animate img {
@@ -121,7 +165,7 @@ header .navbar.animate {
 }
 
 #hero .image img:hover {
-    cursor: pointer;
+    cursor: pointer;    /* margin: auto; */
 }
 
 #hero .image.animate img:hover {
@@ -192,7 +236,6 @@ header .navbar.animate {
 #hero .hero-content > a:hover::after, #hero .hero-content > a:focus::after, #hero .hero-content > a:active::after {
     width: 100%;
 }
-
 
 
 /* about me */
