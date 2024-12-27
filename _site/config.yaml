@@ -143,6 +143,9 @@ params:
           url: https://github.com/Sayantani-Bhattacharya 
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/sayantani-bhattacharya-19a419175/
+        - icon: fab fa-mailto
+          url: mailto: sayantanibhattacharya2025@u.northwestern.edu
+
       # customIcons:
       #   - icon: /fav.png
       #     url: /posts/my-first-post/
