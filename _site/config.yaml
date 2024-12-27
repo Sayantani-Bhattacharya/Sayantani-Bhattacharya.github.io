@@ -140,9 +140,9 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://github.com/NuCapybara
+          url: https://github.com/Sayantani-Bhattacharya 
         - icon: fab fa-linkedin
-          url: https://www.linkedin.com/in/jialu-yu/
+          url: https://www.linkedin.com/in/sayantani-bhattacharya-19a419175/
       # customIcons:
       #   - icon: /fav.png
       #     url: /posts/my-first-post/
@@ -414,9 +414,8 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com/NuCapybara
-      linkedin: https://linkedin.com/in/jialu-yu
-
+      github: https://github.com/Sayantani-Bhattacharya 
+      linkedin: https://www.linkedin.com/in/sayantani-bhattacharya-19a419175/    
 
   # List pages like blogs and posts
   listPages:

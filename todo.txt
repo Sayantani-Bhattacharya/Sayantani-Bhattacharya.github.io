@@ -1,0 +1,10 @@
+Todo:
+
+1. resizing for other systems: phone,tab,web.
+2. alligning stuff.
+3. adding resume, publication, socials pages.
+4. deciding projects.
+5. addding skeleton of the projects.
+6. modularising the project adding section.
+7. modifying the projects into presentatble stuff.
+8. writing the content for each.
