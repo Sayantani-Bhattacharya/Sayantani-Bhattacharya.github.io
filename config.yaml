@@ -143,10 +143,12 @@ params:
     # subtitle: "A passionate Robotics Engineer."
     # content: "I leverage my coding, design, and analysis skills to construct robots that liberate people's hands."
     image: /images/profilePic-rmv.png
-    taglines: 
-      - "</Robotics Engineer>"
-      - "< Researcher>"
-      - "<Developer>"
+    tagline1: "</Robotics Engineer>"
+    tagline2: "</ Imageneer>"
+    tagline3: "</ Researcher>"
+    tagline4: "</ Developer>"
+    tagline5: "</ Learner>"
+
     bottomImage:
       enable: false
     # roundImage: true # Make hero image circular | default false

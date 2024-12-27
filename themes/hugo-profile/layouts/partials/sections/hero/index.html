@@ -13,7 +13,19 @@
                     {{ .Site.Params.hero.subtitle }}
                 </h2>
                 <h4 class="{{ if .Site.Params.animate }}animate{{ end }}">
-                    {{ .Site.Params.hero.taglines }}
+                    {{ .Site.Params.hero.tagline1 }}
+                </h4>
+                <h4 class="{{ if .Site.Params.animate }}animate{{ end }}">
+                    {{ .Site.Params.hero.tagline2 }}
+                </h4>
+                <h4 class="{{ if .Site.Params.animate }}animate{{ end }}">
+                    {{ .Site.Params.hero.tagline3 }}
+                </h4>
+                <h4 class="{{ if .Site.Params.animate }}animate{{ end }}">
+                    {{ .Site.Params.hero.tagline4 }}
+                </h4>
+                <h4 class="{{ if .Site.Params.animate }}animate{{ end }}">
+                    {{ .Site.Params.hero.tagline5 }}
                 </h4>
                 <p class="hero-content">
                     {{ .Site.Params.hero.content | markdownify }}

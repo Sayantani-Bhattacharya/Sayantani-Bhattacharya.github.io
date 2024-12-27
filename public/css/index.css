@@ -50,6 +50,12 @@
     50% { border-color: #FCD667; }
 }
 
+/* Hide text animation */
+@keyframes hideText {
+    0%, 95% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 /* Header animation */
 @keyframes fade-up {
   0% {
@@ -134,9 +140,12 @@ header .navbar.animate {
     margin: 0 auto;
     letter-spacing: .15em;
     animation: 
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
+        typing 3.5s steps(50, end) infinite,
+        blink-caret .75s step-end infinite,
+        hideText 5s forwards infinite;
+    opacity: 0;
 }
+
 
 #hero p {
     margin: 20px 0px 0px;
