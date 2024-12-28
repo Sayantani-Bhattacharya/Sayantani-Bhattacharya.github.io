@@ -27,7 +27,7 @@ Menus:
     - identifier: Publications
       name: Publications
       title: Publications
-      url: /publications
+      url: /posts/publications/
       weight: 2
     # - identifier: Work Experience
     #   name: Work Experience
@@ -38,24 +38,32 @@ Menus:
     #   title: Blog
     #   url: /blog
     #   weight: 2
-    - identifier: About Me
-      name: About Me
-      title: About Me
-      url: /about
-      weight: 2
-    - identifier: Contact
-      name: Contact
-      title: Contact
-      url: /contact
-      weight: 2
+    # - identifier: About Me
+    #   name: About Me
+    #   title: About Me
+    #   url: /about
+    #   weight: 2
+    # - identifier: Contact
+    #   name: Contact
+    #   title: Contact
+    #   url: /contact
+    #   weight: 2
     - identifier: Resume
       name: Resume
-      title: resume Link
-      url: /resume
-      weight: 2    
+      title: Resume Link
+      weight: 2 
+      url: /posts/resume/  
+      toc: none
+      # params:
+      #   # Resume Download: When you click on the Resume menu item, the browser will download the file specified in the url field.
+      #   # Single or New Tab: The newPage field determines if the link opens in the same tab or a new one.
+      #   download: true
+      #   newPage: true
+
   # Dropdown menu:
   #   - identifier: dropdown
-  #     title: Example dropdown menu
+  #     title: Example dtrue
+      # newPage: falseropdown menu
   #     name: Dropdown
   #     weight: 3
   #     - identifier: dropdown1
@@ -134,6 +142,10 @@ params:
       disableProjects: false
       disableAchievements: false
       disableContact: false
+      # Resume Download: When you click on the Resume menu item, the browser will download the file specified in the url field.
+      # Single or New Tab: The newPage field determines if the link opens in the same tab or a new one.
+      download: true
+      newPage: false
 
   # Hero
   hero:
