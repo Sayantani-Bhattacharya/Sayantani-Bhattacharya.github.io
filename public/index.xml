@@ -55,7 +55,7 @@
       <link>http://localhost:1313/posts/publications/</link>
       <pubDate>Mon, 18 Dec 2023 05:18:56 -0600</pubDate>
       <guid>http://localhost:1313/posts/publications/</guid>
-      <description>Publications: In this project, the Franka arm searches for known randomly placed pins and shoots them down. The Franka arm is fitted with an onboard camera to search its environment and two Nerf blasters to be able to shoot the targets. There are two rounds of shooting, while during each rounds, the user can verbally specify colors of the pins that the arm is going to shoot and the Franka arm will pick up one gun to shoot all the designate colored pins at the environment.</description>
+      <description> 1. Conflict-Free Node-to-Robot Scheduling for Lifelong Operation in a Warehouse with Narrow-Corridor Environment. - Published in IEEE Conference on Decision and Control (CDC) 2023 - Affiliation: 2. Multiple Damage Detection in PZT Sensor Using Dual Point Contact Method. - Published in MDPI sensors 2022 - Affiliation: 3. Multiple damage detection in piezoelectric ceramic sensor using scanning point contact excitation and detection method. - Presented in Symposium of Ultrasonic Electric Japan 2021 - Affiliation: </description>
     </item>
   </channel>
 </rss>
