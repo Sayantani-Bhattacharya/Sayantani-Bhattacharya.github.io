@@ -331,86 +331,144 @@ params:
   # projects
   projects:
     enable: true
-    # title: "Custom Name"
+    title: "Featured Projects"
     items:
-      - title: Precision Pin-hunting Meets Playfulness
-        content: The Franka arm autonomously shoots randomly placed pins based on user-specified colors.
-        image: /images/ME495_Nerf_gun1.gif
+      - title: Deep RL Based Arm Control.
+        content: Trained multiple double-jointed arms to move to target locations.
+        image: /images/projects/DRL_arm.gif
         featured:
           name: Read More
-          link: /posts/my-first-post/
+          link: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control
+          # link: /posts/my-first-post/
         badges:
-          - "ROS2"
+          - "Deep Reinforcement Learning"
+          - "DDPG"
+          - "Unity ML Agents"
           - "Python"
-          - "Path Planning"
-          - "Computer Vision/YOLO"
-          - "AprilTag"
-          - "SolidWorks"
+          - "Numpy"          
         links:
           - icon: fa fa-envelope
-            url: mailto:?subject=Check%20out%20this%20project!&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
           - icon: fab fa-github
-            url: https://github.com/NuCapybara/robot_go_bowling
+            url: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control     
 
-      - title: Simulating the Dynamics from Scratch-Mechanical Modeling of a Jack Bouncing within the Box Boundaries.
+      - title: Dual Player Table Tennis. 
+        content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
+        image: /images/projects/tennis.gif
+        featured:
+          name: Read More
+          # link: /posts/my-third-post/
+          link: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
+        badges:
+          - "Deep Reinforcement Learning"
+          - "DDPG"
+          - "Unity ML Agents"
+          - "Multi-Agent Systems"
+          - "Python"
+          - "Numpy"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Neural-Net-Netters%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
+
+      - title: Deep Q-Learning based navigation.
+        content: Trained an agent to navigate (and collect bananas!) in a large, square world.
+        image: /images/projects/DQN_nav.gif
+        featured:
+          name: Read More
+          # link: /posts/my-fourth-post/
+          link: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
+        badges:
+          - "Reinforcement Learning"
+          - "Q-Learning"
+          - "Unity ML Agents"
+          - "Python"
+          - "Numpy"
+          - "Navigation"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/DQN-Based-Navigation%0D%0A%0D%0AThanks!          
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
+
+      - title: Dynamics modeling from scratch of jack bouncing within the moving box boundaries.
         content: The simulation from scratch involves with Python and control theories, including Euler-Lagrangian equations and impact laws.
-        image: /images/Simulation.gif
+        image: /images/projects/jack_in_box/sim.gif
         featured:
           name: Read More
           link: /posts/my-second-post/
-        badges:
+        badges:          
+          - "Euler-Lagrangian Equations"
+          - "Impact Equations"
           - "Python"
+          - "Sympy"
+          - "Numpy"
           - "Control"
-          - "Euler-Lagrangian Equation"
-          - "Impact Law"
+          - "Dynamics"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/2D_Dynamic_simulation%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/2D_Dynamic_simulation
+
+      - title: Linux System Monitor.
+        content: A system monitor system parallel to htop, that displays the CPU, process IDs, memory usage, etc of a Linux system.
+        image: /images/projects/monitor.png
+        featured:
+          name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/Linux-System-Monitor
+          # link: /posts/my-first-post/
+        badges:
+          - "C++"
+          - "Linux"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Linux-System-Monitor%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/Linux-System-Monitor
+
+      - title: Traffic-Flow-Simulation.
+        content: Built a suitable and thread-safe communication protocol between vehicles and intersections to complete the simulation.
+        image: /images/projects/traffic_simulation.gif
+        featured:
+          name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/Traffic-Flow-Simulation
+        badges:
+          - "C++"
+          - "Linux"
+          - "Concurrency"
+          - "Multi-Agent Systems"
         links:
           - icon: fab fa-github
-            url: https://github.com/NuCapybara/BouncingJack/tree/main
+            url: https://github.com/Sayantani-Bhattacharya/Traffic-Flow-Simulation
 
-      - title: Drone Tagging - Release Mechanism Design
-        content: Designed a new release mechanism that will make the tag more robust to perturbations and external factors, resulting in an increase to the deployment success rate of the biologging tags.
-        image: /images/Drone_Tagging.gif
+      - title: Open Street Map Route Planner.
+        content: A* based search algorithm to find the shortest path between two points in a map.
+        image: /images/projects/map.png
         featured:
           name: Read More
-          link: /posts/my-third-post/
+          link: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
         badges:
-          - "Solidworks"
-          - "Fluid dynamics"
-          - "Engineering Analysis and validation"          
-          - "Design"
-
-      - title: Robot Nurse - Mouth Care for an Unconscious Resident
-        content: The robot nurse will detect patient's lip and hydrate it with a cotton swab.
-        image: /images/Robot_Jon.gif
-        featured:
-          name: Read More
-          link: /posts/my-fourth-post/
-        badges:
-          - "ROS2"
           - "C++"
-          - "Python"
-          - "Computer Vision"
-          - "MoveIt"
-          - "Solidworks"
+          - "Path planning"
         links:
           - icon: fab fa-github
-            url: https://github.com/NuCapybara/Winter_Project
+            url: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
 
-      - title: Real-Time Human Motion Prediction for Robotic Teleoperation Using mVAE
-        content: Using mVAE, this project predicts robot arm movements from human motion for real-time teleoperation, with applications in robotics, autonomous warehousing, and stroke rehabilitation.
-        image: /images/myo.jpg
+      - title: Chatbot
+        content: A simple chatbot that can answer questions using info from a presaved database and have a conversation with the user.
+        image: /images/projects/chatbot_demo.gif
         featured:
           name: Read More
-          link: /posts/my-fifth-post/
+          link: https://github.com/Sayantani-Bhattacharya/Chatbot
         badges:
-          - "ROS2"
           - "C++"
-          - "Python"
-          - "Machine Learning(mVAE)"
+          - "Memory Management"
           - Data Processing
         links:
           - icon: fab fa-github
-            url: https://github.com/NuCapybara/mVAE_robot_human_training
+            url: https://github.com/Sayantani-Bhattacharya/Chatbot
 
 
       # - title: Hugo Profile V2
