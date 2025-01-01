@@ -392,6 +392,100 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
 
+      - title: Pen Grasping Challenge.
+        content: PincherX100 Arm programmed to detect, calibrate, manipulate and grasp a pen using OpenCV and depth sensing via Intel RealSense D435i.
+        image: /images/projects/pen.gif
+        featured:
+          name: Read More
+          # link: /posts/my-fourth-post/
+          link: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
+        badges:
+          - "OpenCV"
+          - "Robotic Manipulation"
+          - "Computer Vision"
+          - "Python"          
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/ThePenChallenge%0D%0A%0D%0AThanks!          
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
+          
+      - title: Mini Golf using Franka arm.
+        content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
+        image: /images/projects/golf/golf.gif
+        featured:
+          name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+          # link: /posts/my-first-post/
+        badges:
+          - "ROS2"
+          - "Move Group API"
+          - "Computer Vision"
+          - "Robotic Manipulation"
+          - "Python"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Apex_Putter%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+
+      - title: Mini Quadraped Motion.
+        content: A mini quadraped robot programmed to walk, trot, and run using inverse kinematics and gait planning.
+        image: /images/projects/petoi/petoiOG.gif
+        featured:
+          name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/Mini_Quadraped
+          # link: /posts/my-first-post/
+        badges:
+          - "Python"
+          - "Robotic Manipulation"
+          - "Gait Planning"
+          - "Sensor-Motor Control"
+          - "Arduino"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Mini_Quadraped%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/Mini_Quadraped
+
+      - title: Kuka YouBot trajectory planning and control.
+        content: A Kuka YouBot programmed to plan trajectory and control the arm to pick and place object in CopelliaSim.
+        image: /images/projects/youBot_sim/mk.gif
+        featured:
+          name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project
+          # link: /posts/my-first-post/
+        badges:
+          - "Python"
+          - "Robotic Manipulation"
+          - "PID Control"
+          - "Trajectory Planning"
+          - "CoppeliaSim"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project
+
+      - title: CNN Sketch Classifier.
+        content: A Convolutional Neural Network trained to classify sketches using dataset containing ~20,000 sketches distriburted over 250 object categories.
+        image: /images/projects/sketch.gif
+        featured:
+          name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier
+          # link: /posts/my-first-post/
+        badges:
+          - "Machine Learning"
+          - "Python"
+          - "tensorflow"
+          - "Numpy"
+          - "Neural Nerworks"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier
+
       - title: Dynamics modeling from scratch of jack bouncing within the moving box boundaries.
         content: The simulation from scratch involves with Python and control theories, including Euler-Lagrangian equations and impact laws.
         image: /images/projects/jack_in_box/sim.gif
@@ -469,7 +563,6 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Chatbot
-
 
       # - title: Hugo Profile V2
       #   content: A clean and simple Hugo template for personal portfolio and blog.
