@@ -226,26 +226,28 @@ header .navbar.animate {
     line-height: 0%;
     border-radius: 50%;
     margin-top: 50px;
-    padding: 0.7rem;
+    padding: 0.5rem; /* Reduced padding for better fit */
     border: 1px solid var(--primary-color);
-    transition: none;
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
-#hero a.btn.social-icon img {
-    width: 1em;
+#hero a.btn.social-icon img 
+{
+    width: 0.8em; /* Slightly smaller image size for scaling */
 }
 
-#hero a.btn.social-icon:hover {
+#hero a.btn.social-icon:hover 
+{
     opacity: 0.8;
 }
 
 #hero a.btn {
     margin-top: 50px;
-    padding: 0.7rem 1.75rem;
+    padding: 0.6rem 1.5rem; /* Adjusted padding for better scaling */
     border: 1px solid var(--primary-color);
     color: var(--text-color) !important;
-    border-radius: .75rem;
-    transition: none;
+    border-radius: 0.5rem; /* Reduced border-radius for compactness */
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
 
 #hero a.btn:focus {
@@ -261,6 +263,23 @@ header .navbar.animate {
 #hero a.btn.social-icon:hover {
     background-color: var(--background-color) !important;
     opacity: 0.7;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    #hero a.btn.social-icon {
+        margin-top: 30px;
+        padding: 0.4rem; /* Further reduce padding for smaller screens */
+    }
+
+    #hero a.btn {
+        margin-top: 30px;
+        padding: 0.5rem 1.2rem; /* Adjusted for smaller screens */
+    }
+
+    #hero a.btn.social-icon img {
+        width: 0.7em; /* Scale image size for smaller devices */
+    }
 }
 
 #hero .hero-content > a {
