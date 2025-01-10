@@ -99,6 +99,10 @@ header .navbar.animate {
     min-height: 100vh;
     line-height: 2rem;
     max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative;
+    padding: 0 1rem; /* Add padding to avoid content hitting screen edges */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 #hero .content.animate {
@@ -109,42 +113,58 @@ header .navbar.animate {
     opacity: 0.5;
     position: absolute;
     bottom: -50px;
-    left: -150px;
+    left: 0; /* Align with the viewport */
+    width: 100%; /* Fit the width of the screen */
+    max-width: 100%;
 }
 
 #hero .subtitle {
-    transform: translate(-30%,0); /* Moves left and up respectively*/
-    font-size: clamp(14px,5vw,16px);
+    transform: translate(0, 0); /* Remove offsets for better alignment */
+    font-size: clamp(14px, 5vw, 16px);
     opacity: 0.6;
+    text-align: center; /* Center text for mobile screens */
+    margin: 0 auto;
 }
 
 #hero h2 {
-    transform: translate(-30%,0); /* Moves left and up respectively*/
-    font-size: clamp(40px, 8vw, 80px);
+    transform: translate(0, 0); /* Remove unnecessary transforms */
+    font-size: clamp(32px, 8vw, 64px); /* Adjust for better scaling */
     color: var(--primary-color) !important;
+    /* text-align: center; */
+    margin: 0 auto;
 }
 
 #hero h3 {
-    transform: translate(-30%,0); /* Moves left and up respectively*/
-    font-size: clamp(40px, 8vw, 60px);
-    /* color: var(--primary-color) !important; */
+    transform: translate(0, 0);
+    font-size: clamp(24px, 6vw, 48px);
     opacity: 0.5;
+    /* text-align: center; */
+    margin: 0 auto;
 }
 
 #hero h4 {
-    transform: translate(80%,0);   /* Moves left and up respectively*/
-    font-size: clamp(20px, 8vw, 40px);
+    transform: translate(0, 0);
+    font-size: clamp(16px, 5vw, 32px);
     color: #FCD667 !important;
     opacity: 1.0;
+    /* text-align: center; */
+    margin: 0 auto;
+    animation: 
+        typing 25s steps(30, end) infinite alternate;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden; /* Prevents overflow */
+    width: 100%; /* Ensure it fits inside the container */
 }
 
 #hero h4.animate {
+    /* This section is for the title animation part */
     /* animation: fade-in 4s ease-in-out; */
     overflow: hidden;
     border-right: .15em solid #FCD667;
     white-space: nowrap;
     margin: 0 auto;
-    transform: translate(180%, 200%);
+    transform: translate(0%, 50%);
     letter-spacing: .15em;
     opacity: 1;
     width: 20ch; /* Set width to match the longest text (e.g., 20 characters) */ 
@@ -167,24 +187,23 @@ header .navbar.animate {
 }
 
 #hero p {
-    margin: 20px 0px 0px;
-    max-width: 640px;
+    margin: 20px auto;
+    max-width: 90%; /* Ensure it fits on mobile */
     opacity: 0.8;
+    text-align: justify; /* Improve readability */
 }
 
 #hero .image img {    
     padding: 0;
     mix-blend-mode: screen;
     border: none;
-    max-width: none;
-    width:fit-content;     
-    height: 120%;
+    max-width: 100%; /* Ensure it scales properly */
+    height: auto; /* Maintain aspect ratio */
     object-fit: cover; 
-    transform: translate(-100%,-20%); /* Moves left and up respectively*/
+    transform: translate(0, 0); /* Remove offsets */
     filter: contrast(1.2);        
-    /* mix-blend-mode: difference; */
-    /* background-blend-mode: difference; */
     display: block;
+    /* margin: 0 auto; */
 }
 
 #hero .image.animate img {
