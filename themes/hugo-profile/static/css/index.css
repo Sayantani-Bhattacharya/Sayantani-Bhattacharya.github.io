@@ -195,7 +195,7 @@ header .navbar.animate {
 
 #hero .image img {    
     padding: 0;
-    mix-blend-mode: screen;
+    /* mix-blend-mode: screen; */
     border: none;
     max-width: 100%; /* Ensure it scales properly */
     height: auto; /* Maintain aspect ratio */
