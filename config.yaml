@@ -352,6 +352,25 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control     
 
+      - title: Mini Golf using Franka arm.
+        content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
+        image: /images/projects/golf/golf.gif
+        featured:
+          name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+          # link: /posts/my-first-post/
+        badges:
+          - "ROS2"
+          - "Move Group API"
+          - "Computer Vision"
+          - "Robotic Manipulation"
+          - "Python"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Apex_Putter%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+      
       - title: Dual Player Table Tennis. 
         content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
         image: /images/projects/tennis.gif
@@ -410,24 +429,7 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
           
-      - title: Mini Golf using Franka arm.
-        content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
-        image: /images/projects/golf/golf.gif
-        featured:
-          name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
-          # link: /posts/my-first-post/
-        badges:
-          - "ROS2"
-          - "Move Group API"
-          - "Computer Vision"
-          - "Robotic Manipulation"
-          - "Python"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Apex_Putter%0D%0A%0D%0AThanks!
-          - icon: fab fa-github
-            url: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+      
 
       - title: Mini Quadraped Motion.
         content: A mini quadraped robot programmed to walk, trot, and run using inverse kinematics and gait planning.
