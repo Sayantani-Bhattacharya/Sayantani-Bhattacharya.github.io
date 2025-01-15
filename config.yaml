@@ -154,7 +154,7 @@ params:
     title: "Sayantani Bhattacharya..."
     # subtitle: "A passionate Robotics Engineer."
     # content: "I leverage my coding, design, and analysis skills to construct robots that liberate people's hands."
-    image: /images/profilePic-rmv.png
+    image: /images/profilePic.png
     tagline1: "</Robotics Engineer>"
     tagline2: "</ Imagineer>"
     tagline3: "</ Researcher>"
@@ -491,7 +491,7 @@ params:
         image: /images/projects/jack_in_box/sim.gif
         featured:
           name: Read More
-          link: /posts/my-second-post/
+          link: /posts/jack-in-box/
         badges:          
           - "Euler-Lagrangian Equations"
           - "Impact Equations"

@@ -29,15 +29,17 @@
 
 
 <meta property="og:title" content="Simulating the Dynamics from Scratch-Modeling of a Jack Bouncing within the Box Boundaries." />
-<meta property="og:description" content="Author: Jialu Yu Introduction The focal point of this project is the modeling of the mechanical system of a jack bouncing around in the boundary of a box. Overall System and Reference Frames Attached is a detailed drawing of the system, illustrating all the frames in use, complete with frame labels. These frames and their labels have been consistently used and identified in the code to maintain clarity and coherence." />
+<meta property="og:description" content="Introduction Overall System and Reference Frames Attached is a detailed drawing of the system, illustrating all the frames in use, complete with frame labels. These frames and their labels have been consistently used and identified in the code to maintain clarity and coherence.
+Frames The base frame for the box is called g_wf, where f is the center of the box. g_f6, g_f7, g_f8, g_f9 are the relative frames based on the box center." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/posts/my-second-post/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-01-09T14:39:44-06:00" />
-<meta property="article:modified_time" content="2024-01-09T14:39:44-06:00" /><meta property="og:site_name" content="Hugo Profile" />
+<meta property="og:url" content="http://localhost:1313/posts/jack-in-box/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-01-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2025-01-09T00:00:00+00:00" /><meta property="og:site_name" content="Hugo Profile" />
 
 
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Simulating the Dynamics from Scratch-Modeling of a Jack Bouncing within the Box Boundaries."/>
-<meta name="twitter:description" content="Author: Jialu Yu Introduction The focal point of this project is the modeling of the mechanical system of a jack bouncing around in the boundary of a box. Overall System and Reference Frames Attached is a detailed drawing of the system, illustrating all the frames in use, complete with frame labels. These frames and their labels have been consistently used and identified in the code to maintain clarity and coherence."/>
+<meta name="twitter:description" content="Introduction Overall System and Reference Frames Attached is a detailed drawing of the system, illustrating all the frames in use, complete with frame labels. These frames and their labels have been consistently used and identified in the code to maintain clarity and coherence.
+Frames The base frame for the box is called g_wf, where f is the center of the box. g_f6, g_f7, g_f8, g_f9 are the relative frames based on the box center."/>
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -282,7 +284,7 @@ Simulating the Dynamics from Scratch-Modeling of a Jack Bouncing within the Box 
             <div class="text-center">
                
               <small>|</small>
-              Jan 9, 2024
+              Jan 9, 2025
 
               
               <span id="readingTime">
@@ -293,14 +295,8 @@ Simulating the Dynamics from Scratch-Modeling of a Jack Bouncing within the Box 
           </div>
           
           <article class="page-content  p-2">
-          <div style="text-align:center;">Author: Jialu Yu</div>
+          <!-- <div style="text-align:center;">Author: Sayantani Bhattacharya</div> -->
 <h2 id="introduction">Introduction</h2>
-<p>The focal point of this project is the modeling of the mechanical system of a jack bouncing around in the boundary of a box.
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/tao88HEVpCM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-</p>
 <h2 id="overall-system-and-reference-frames">Overall System and Reference Frames</h2>
 <p>Attached is a detailed drawing of the system, illustrating all the frames in use, complete with frame labels. These frames and their labels have been consistently used and identified in the code to maintain clarity and coherence.</p>
 <p><img src="/images/jack.jpeg" alt="targets">
@@ -310,13 +306,11 @@ Simulating the Dynamics from Scratch-Modeling of a Jack Bouncing within the Box 
 <br />
 The base frame for the box is called g_wf, where f is the center of the box.  <code>g_f6, g_f7, g_f8, g_f9</code> are the relative frames based on the box center. The frame between world and box vertices can be generated through cross product of <code>g_wf</code> and <code>g_f6, g_f7, g_f8, g_f9</code>.
 The base frame for the jack is called g_wj, where j is the center of the jack.  <code>g_jb,  g_ja, g_jc, g_jd</code> are the relative frames based on the box center. The frame between world and box vertices can be generated through cross product of <code>g_wj and g_jb,  g_ja, g_jc, g_jd</code>.</p>
-<p><strong>Euler-Lagrange equations</strong>
+<p><strong>Euler-Lagrange Equations</strong>
 <br />
 The Euler Lagrange equation is calculated based on the:</p>
-<ol>
-<li>Calculate Lagrangian equation by <code>L = KE - V</code>, where <code>KE</code> is kinetic energy of both jack and box and <code>V</code> is the potential energy of both jack and box.
-The python script calculating the kinetic energy <code>KE</code> and potential energy <code>V</code> is shown below:</li>
-</ol>
+<p>Considering uniform mass distribution in both box and jack, I calculate the kinetic and potential energy at the centroid (geometric center of the two rectangles). And Lagrangian as kinetic minus the potential energy of the two bodies.<code>L = KE - V</code>, where <code>KE</code> is kinetic energy of both jack and box and <code>V</code> is the potential energy of both jack and box. Using the Euler lagrange formula to get the equations of motion, by equating it to the external force applied on both the rigid bodies.</p>
+<p>The python script calculating the kinetic energy <code>KE</code> and potential energy <code>V</code> is shown below:</p>
 <pre tabindex="0"><code>#Kinetic Energy and Potential Energy
 #frame kinetic energy
 KE_frame = sym.simplify(0.5*(v_wf).T*Inertia_frame_mat*v_wf)
@@ -346,18 +340,39 @@ V_wd =  m_j_point*gravity*h_wd[0]
 
 
 V_total = sym.simplify(sym.Matrix([V_f + V_wa + V_wb + V_wc + V_wd]))
-</code></pre><ol start="2">
-<li>Define symtem variables as <code>q = [x_f,  y_f, theta_f, x_j,  y_j,  theta_j]</code> and use <code>Lagrangian Equation</code> and <code>q</code> to calculate <code>Euler Lagrangian equation</code>.<br /></li>
-</ol>
+</code></pre><p><strong>System variables:</strong></p>
+<p>Define system variables as <code>q = [x_f,  y_f, theta_f, x_j,  y_j,  theta_j]</code> and use <code>Lagrangian Equation</code> and <code>q</code> to calculate <code>Euler-Lagrangian Equation</code>.<br /></p>
 <!-- $$\frac{\partial L}{\partial \dot{q}} \bigg |^{\tau +}_{\tau -} = \lambda \frac{\partial \phi}{\partial q^{'}}$$ -->
-<p><strong>Add the Constraints to the system</strong></p>
-<p>To add the constraints to the system, constraints will be found through the area A between the vertex of the jack and the side of the box. The area could be found through the cross product of two vectors on side of the box and the jack vertex.</p>
-<p>Once the jack and the box collide, the area A should be 0. However, considering the movement tolerance, I set up a very small threshold for that.</p>
-<p><strong>Update the external forces</strong></p>
-<p>External forces are defined by a force matrix corresponding to the variables in q. I defined a torque of 30 N-m on the box and an upward force on the box to hold the box from falling down. The force matrix is <code>Force_Matrix = symMatrix([0, Force, 30, 0, 0, jack_torque])</code>.
-Note, the <code>jack_torque = 0</code> since they are point mass.<br /></p>
-<p><strong>Apply the impact update laws</strong></p>
-<p>Impact update function can be found at cell 13 of 19 where it takes <code>a current state variable</code> and an index of <code>phi, constraint</code>. Then it will utilize the following function to do the impact update.</p>
+<p><strong>External force:</strong></p>
+<p>The box is supposed to vibrate and have some degree of gravity compensation, so I have given the external force in y as 4<em>M_box</em>g  [ M_box*g : is the force due to gravity, and 4 is a tunable parameter, could be any hard-set value, but its easier to reference wrt to gravitational force, so used this.] And the external force on theta is a sinusoidal function, to generate an oscillation/ vibration like motion. And there is no external force to jack (it has potential component, but that is internal). <br /></p>
+<p><strong>Impact conditions:</strong></p>
+<p>There are 16 impact conditions in this model. Which is that every 4 point of the jack coming in contact with any of the box’s walls. Which basically means that the x component of transform (between corner and wall) for Wall 1 and 3 and y coordinate for Wall 2 and 4, should be less than a threshold value. Value should not be kept 0, as in simulation, till the 0 transform is actually achieved the animation would have stepped outside the box, as it is a bit coarsely discrete system. Also, this threshold value can be tuned. And I used it to detect the impact occurrence and calling the impact update function. <br /></p>
+<p><strong>Impact update procedure:</strong></p>
+<p>To find the state of the system after impact, we solve six conservation of momentum equations and one Hamiltonian conservation equation. We have 7 variables (lambda, and six state variables [q]) and 7 equations. And I used this to generate the trajectory after every impact. <br /></p>
+<p><strong>Simulated trajectory plots:</strong></p>
+<p>Box-Motion:
+<br />
+<img src="/images/Box-Motion.png" alt="targets">
+<br />
+<br /></p>
+<p>Box-Velocity:
+<br />
+<img src="/images/Box-Velocity.png" alt="targets">
+<br />
+<br /></p>
+<p>Jack-Motion:
+<br />
+<img src="/images/Jack-Motion.png" alt="targets">
+<br />
+<br /></p>
+<p>Jack-Velocity:
+<br />
+<img src="/images/Jack-Velocity.png" alt="targets">
+<br />
+<br /></p>
+<p><strong>Simulation Behavior Analysis:</strong></p>
+<p>When any of the four corners of the jack comes in contact with any of the four walls of the box [ i.e. impact condition is met], the jack bounces off the wall and keeping the speed of jack same, as I am assuming elastic collision [ i.e. following the impact update rule].</p>
+<p>Also, the external force ensures the box does not free fall under gravity. If you uncomment the external force section, this behavior can be seen in the simulation as well. Also, as a sanity check, one may uncomment impact equations, and it would be observed that, both the bodies would have free fall decoupled from each other. <br /></p>
 <!-- $$\bigg [ \frac{\partial L}{\partial \dot{q}} \cdot \dot{q} - L(q, \dot{q}) \bigg] ^{\tau +}_{\tau -} = 0.$$ -->
           </article>
         </div>
@@ -388,17 +403,17 @@ Note, the <code>jack_torque = 0</code> since they are point mass.<br /></p>
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text=Simulating%20the%20Dynamics%20from%20Scratch-Modeling%20of%20a%20Jack%20Bouncing%20within%20the%20Box%20Boundaries.&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fmy-second-post%2f">
+                  <a target="_blank" href="https://twitter.com/share?text=Simulating%20the%20Dynamics%20from%20Scratch-Modeling%20of%20a%20Jack%20Bouncing%20within%20the%20Box%20Boundaries.&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fjack-in-box%2f">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Simulating%20the%20Dynamics%20from%20Scratch-Modeling%20of%20a%20Jack%20Bouncing%20within%20the%20Box%20Boundaries.: http%3a%2f%2flocalhost%3a1313%2fposts%2fmy-second-post%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Simulating%20the%20Dynamics%20from%20Scratch-Modeling%20of%20a%20Jack%20Bouncing%20within%20the%20Box%20Boundaries.: http%3a%2f%2flocalhost%3a1313%2fposts%2fjack-in-box%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Simulating%20the%20Dynamics%20from%20Scratch-Modeling%20of%20a%20Jack%20Bouncing%20within%20the%20Box%20Boundaries.&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a1313%2fposts%2fmy-second-post%2f'>
+                  <a target="_blank" href='mailto:?subject=Simulating%20the%20Dynamics%20from%20Scratch-Modeling%20of%20a%20Jack%20Bouncing%20within%20the%20Box%20Boundaries.&amp;body=Check%20out%20this%20site http%3a%2f%2flocalhost%3a1313%2fposts%2fjack-in-box%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>

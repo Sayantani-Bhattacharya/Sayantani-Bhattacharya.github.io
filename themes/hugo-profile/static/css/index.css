@@ -201,7 +201,7 @@ header .navbar.animate {
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; 
     transform: translate(0, 0); /* Remove offsets */
-    filter: contrast(1.2);        
+    /* filter: contrast(1.2);         */
     display: block;
     /* margin: 0 auto; */
 }
