@@ -333,24 +333,27 @@ params:
     enable: true
     title: "Featured Projects"
     items:
-      - title: Collaborative Exploration by Quadruped Fleet.
-        content: Trained multiple double-jointed arms to move to target locations.
-        image: /images/projects/DRL_arm.gif
+      - title: Collaborative Quadruped Fleet. #Decentralised.
+        content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+        image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
         featured:
           name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control
+          link: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
           # link: /posts/my-first-post/
         badges:
-          - "Deep Reinforcement Learning"
-          - "DDPG"
-          - "Unity ML Agents"
-          - "Python"
-          - "Numpy"          
+          - "Visual-SLAM"
+          - "LiDAR-SLAM"
+          - "High-Level controls"
+          - "Navigation"
+          - "Jetson"
+          - "C++"
+          - "ROS2"          
+          - "Point cloud library"          
         links:
           - icon: fa fa-envelope
             url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
           - icon: fab fa-github
-            url: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control     
+            url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs     
 
       - title: Mini Golf using Franka arm.
         content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.

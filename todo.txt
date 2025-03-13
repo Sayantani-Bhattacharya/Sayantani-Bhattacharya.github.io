@@ -1,10 +1,41 @@
 Todo:
 
-1. resizing for other systems: phone,tab,web.
-2. alligning stuff.
-3. adding resume, publication, socials pages.
-4. deciding projects.
-5. addding skeleton of the projects.
-6. modularising the project adding section.
+->> photo colour
+->> resume out of background
+->> Add content in msr ones.
+
+5. addding skeleton for the projects. [gif, title, tags, linking, github, socials]
+6. modularising the project adding section. 
+8. arranging all projects -> next, prev, order, feature.
+1. resizing for other systems: phone,tab,web.  
+2. alligning stuff. 
+
+
+9. tagging/ categorising like adityas page.
+
+10. writing deatiled the content for each.
+11. add google analytics page.
+12. add coffee thing commented
+13. modify the projects github
+14. import link the embedded stuff to own repo.
+15. link also the ml stuff to own repo.
+
+
+16. see if a .com website is possible and cost for it.
+
+
+//////////////////////////////////
+1. record a gif for system monitor proj.
+2. change gif for jack-box.
+3. add professional readme to the uadcity ones -> as will use it the same markdown in there pages also.
+
+
+4. make apex putter public and mirror the repo to my own and link it.
+
+
+
+////////// done ////////
+
+3. adding resume, publication, socials pages. 
+4. deciding projects. 
 7. modifying the projects into presentatble stuff.
-8. writing the content for each.
