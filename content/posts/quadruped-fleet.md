@@ -27,13 +27,19 @@ By all means this is just the first iteration and needs good work for being depl
 </div> 
 
 ## Unitree-GO2
+<div style="text-align: center; margin-bottom: 30px;">
+    <img src="/images/projects/Quadruped_Fleet/go2.png" alt="Robot Fleet" width="900" height="auto">
+</div> 
+
 <!-- A. hardware of both
     B. block diagram of both / rqt_graph 
     C. manual nav, filetring data and high level controls.
     D. Rviz videos both both. -->
 
 ## Unitree-GO1
-
+<div style="text-align: center; margin-bottom: 30px;">
+    <img src="/images/projects/Quadruped_Fleet/go1.png" alt="Robot Fleet" width="900" height="auto">
+</div> 
 <!-- A. hardware of both
     A. JEtson- edge computing
     B. block diagram of both.
@@ -45,12 +51,12 @@ By all means this is just the first iteration and needs good work for being depl
         B. videos, point cloud, mapping.
         C. sterio theory, Zed 2i cam -->
 
-## Lidar SLam
+## Lidar SLAM
 <!-- A. theory
         B.  videos, point cloud, mapping.
         C. point cloud theory, 4D lidar stuff -->
 
-## Merging Map
+## Map-Merging 
 <!-- a. theory
         b. simulation video,... later complete thing -->
 
