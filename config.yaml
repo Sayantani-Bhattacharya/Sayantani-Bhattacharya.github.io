@@ -339,7 +339,7 @@ params:
         featured:
           name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
-          # link: /posts/my-first-post/
+          link: /posts/quadruped-fleet/
         badges:
           - "Visual-SLAM"
           - "LiDAR-SLAM"
@@ -458,8 +458,8 @@ params:
         image: /images/projects/petoi/petoiOG.gif
         featured:
           name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Mini_Quadraped
-          # link: /posts/my-first-post/
+          # link: https://github.com/Sayantani-Bhattacharya/Mini_Quadraped
+          link: /posts/jack-in-box/
         badges:
           - "Python"
           - "Robotic Manipulation"
