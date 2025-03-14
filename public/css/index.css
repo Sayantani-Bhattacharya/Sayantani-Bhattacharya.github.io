@@ -1,0 +1,695 @@
+/* Animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Typing animation */
+@keyframes typing {
+    0%, 20%, 40%, 60%, 80% { clip-path: inset(0 100% 0 0);} /* Start typing in */
+    10%, 30%, 50%, 70%, 90% { clip-path: inset(0 0 0 0);}  /* Start typing out */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #FCD667 }
+}
+
+@keyframes messages {
+    0%, 20% { content: "</Robotics Engineer>"; }
+    20%, 40% { content: "</ Imagineer>      "; }
+    40%, 60% { content: "</ Researcher>     "; }
+    60%, 80% { content: "</ Developer>      "; }
+    80%, 100% { content: "</ Learner>       "; }
+}
+
+/* Hide text animation */
+@keyframes hideText {
+    0%, 95% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Header animation */
+@keyframes fade-up {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header .navbar.animate {
+    animation: fade-up 0.5s ease-in;
+}
+
+/* ToolTip */
+
+.tooltip {
+    line-height: 1rem;
+    border-radius: .5rem !important;
+}
+.tooltip-inner {
+    line-height: 1rem;
+}
+.tooltip .tooltip-arrow { 
+    visibility: hidden !important;
+}
+
+/* hero */
+
+#hero {
+    min-height: 100vh;
+    line-height: 2rem;
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative;
+    padding: 0 1rem; /* Add padding to avoid content hitting screen edges */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#hero .content.animate {
+    animation: fade-left 1s ease-out;
+}
+
+#hero .hero-bottom-svg {
+    opacity: 0.5;
+    position: absolute;
+    bottom: -50px;
+    left: 0; /* Align with the viewport */
+    width: 100%; /* Fit the width of the screen */
+    max-width: 100%;
+}
+
+#hero .subtitle {
+    transform: translate(0, 0); /* Remove offsets for better alignment */
+    font-size: clamp(14px, 5vw, 16px);
+    opacity: 0.6;
+    text-align: center; /* Center text for mobile screens */
+    margin: 0 auto;
+}
+
+#hero h2 {
+    transform: translate(0, 0); /* Remove unnecessary transforms */
+    font-size: clamp(32px, 8vw, 64px); /* Adjust for better scaling */
+    color: var(--primary-color) !important;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+#hero h3 {
+    transform: translate(0, 0);
+    font-size: clamp(24px, 6vw, 48px);
+    opacity: 0.5;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+#hero h4 {
+    transform: translate(0, 0);
+    font-size: clamp(16px, 5vw, 32px);
+    color: #FCD667 !important;
+    opacity: 1.0;
+    /* text-align: center; */
+    margin: 0 auto;
+    animation: 
+        typing 25s steps(30, end) infinite alternate;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden; /* Prevents overflow */
+    width: 100%; /* Ensure it fits inside the container */
+}
+
+#hero h4.animate {
+    /* This section is for the title animation part */
+    /* animation: fade-in 4s ease-in-out; */
+    overflow: hidden;
+    border-right: .15em solid #FCD667;
+    white-space: nowrap;
+    margin: 0 auto;
+    transform: translate(0%, 50%);
+    letter-spacing: .15em;
+    opacity: 1;
+    width: 20ch; /* Set width to match the longest text (e.g., 20 characters) */ 
+    height: 1.5em; /* Set height to match the font size */
+    animation: 
+        typing 25s steps(30, end) infinite alternate;
+        /* blink-caret 25.75s step-end infinite, */
+        /* hideText 5s forwards infinite; */
+    /* opacity: 0; */
+    display: inline-block; /* Ensure content doesn't affect layout */
+}
+
+/* Dynamic Messages */
+#hero h4.animate::after {
+    content: "";
+    /* 35: estimated cycle time taken by curson to move back and forth the cursor */
+    animation: messages 25s steps(1, end) infinite; /* Next Cycle messages */
+    display: inline-block;
+    animation-delay: 0s;
+}
+
+#hero p {
+    margin: 20px auto;
+    max-width: 90%; /* Ensure it fits on mobile */
+    opacity: 0.8;
+    text-align: justify; /* Improve readability */
+}
+
+#hero .image img {    
+    padding: 0;
+    /* mix-blend-mode: screen; */
+    border: none;
+    max-width: 100%; /* Ensure it scales properly */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; 
+    transform: translate(0, 0); /* Remove offsets */
+    /* filter: contrast(1.2);         */
+    display: block;
+    /* margin: 0 auto; */
+}
+
+#hero .image.animate img {
+    animation: fade-in 1s ease-out;
+    transition: box-shadow 0.3s;
+}
+
+#hero .image img:hover {
+    cursor: pointer;    /* margin: auto; */
+}
+
+#hero .image.animate img:hover {
+    box-shadow: 0 0 11px rgb(15 80 100 / 20%);
+    filter: contrast(1.2);
+    cursor: pointer;
+}
+
+#hero a.btn.social-icon {
+    color: var(--primary-color) !important;
+    line-height: 0%;
+    border-radius: 50%;
+    margin-top: 50px;
+    padding: 0.5rem; /* Reduced padding for better fit */
+    border: 1px solid var(--primary-color);
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+#hero a.btn.social-icon img 
+{
+    width: 0.8em; /* Slightly smaller image size for scaling */
+}
+
+#hero a.btn.social-icon:hover 
+{
+    opacity: 0.8;
+}
+
+#hero a.btn {
+    margin-top: 50px;
+    padding: 0.6rem 1.5rem; /* Adjusted padding for better scaling */
+    border: 1px solid var(--primary-color);
+    color: var(--text-color) !important;
+    border-radius: 0.5rem; /* Reduced border-radius for compactness */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+#hero a.btn:focus {
+    box-shadow: none;
+}
+
+#hero a.btn:hover {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+    opacity: 0.9;
+}
+
+#hero a.btn.social-icon:hover {
+    background-color: var(--background-color) !important;
+    opacity: 0.7;
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    #hero a.btn.social-icon {
+        margin-top: 30px;
+        padding: 0.4rem; /* Further reduce padding for smaller screens */
+    }
+
+    #hero a.btn {
+        margin-top: 30px;
+        padding: 0.5rem 1.2rem; /* Adjusted for smaller screens */
+    }
+
+    #hero a.btn.social-icon img {
+        width: 0.7em; /* Scale image size for smaller devices */
+    }
+}
+
+#hero .hero-content > a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color) !important;
+}
+
+#hero .hero-content > a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    bottom: 0.37em;
+    background-color: var(--primary-color);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    opacity: 0.5;
+}
+
+#hero .hero-content > a:hover::after, #hero .hero-content > a:focus::after, #hero .hero-content > a:active::after {
+    width: 100%;
+}
+
+
+/* about me */
+#about h3 {
+    color: var(--text-secondary-color) !important;
+}
+
+#about .image img {
+    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
+    transition: box-shadow 0.3s;
+    padding: 0;
+    border: 0;
+}
+
+#about .image img:hover {
+    box-shadow: 0 0 11px rgb(15 80 100 / 20%);
+}
+
+#about ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+#about ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+#about ul li::before {
+    content: "▹";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0px;
+}
+
+#about .content {
+    font-weight: 500;
+    opacity: 0.9 !important;
+    line-height: 1.7rem !important;
+}
+
+#about a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color) !important;
+}
+
+
+
+#about a.btn {
+    margin-top: 50px;
+    padding: 0.7rem 1.75rem;
+    border: 1px solid var(--primary-color);
+    color: var(--text-color) !important;
+    border-radius: .75rem;
+    transition: none;
+}
+
+#about a.btn:focus {
+    box-shadow: none;
+}
+
+#about a.btn:hover {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+    opacity: 0.9;
+}
+
+
+/* experience */
+
+#experience h3 {
+    color: var(--text-secondary-color) !important;
+}
+
+#experience * {
+    background-color: transparent !important;
+}
+
+#experience .tab-pane > * {
+    opacity: 0.9;
+}
+
+#experience .tab-pane small {
+    opacity: 0.8;
+}
+
+#experience .tab-pane ul {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#experience .experience-container .tab-content > .tab-pane p {
+    padding: 1% 0;
+    margin: 0;
+}
+
+#experience .experience-container {
+    background-color: var(--secondary-color) !important;
+    border-radius: .75rem;
+    box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
+}
+
+#experience .nav-item .nav-link {
+    color: var(--text-color) !important;
+    border-bottom: 2px solid transparent; 
+    border-radius: 0%;
+    transition: none;
+    cursor: pointer;
+}
+
+#experience .nav-item .nav-link.active {
+    color: var(--text-color) !important;
+    border-bottom: 2px solid var(--primary-color); 
+    opacity: 0.8;
+}
+
+#experience .nav-item .nav-link.active:hover { 
+    transition: none !important;
+}
+
+#experience .nav-item .nav-link:hover {
+    border-bottom: 2px solid var(--primary-color);
+    opacity: 0.8;
+}
+
+#experience a {
+    opacity: 0.9;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color) !important;
+}
+
+#experience a::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    bottom: 0.37em;
+    background-color: var(--primary-color);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    opacity: 0.5;
+}
+
+#experience a:hover::after, #experience a:focus::after, #experience a:active::after {
+    width: 100%;
+}
+
+#experience .experience-container .tab-content .tab-pane ul {
+    overflow: hidden;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+#experience .experience-container .tab-content .tab-pane ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+#experience .experience-container .tab-content .tab-pane ul li::before {
+    content: "▹";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0px;
+}
+
+#experience .experience-container .tab-content .tab-pane .featuredLink a::after {
+    display: block;
+    width: auto;
+    height: auto;
+    bottom: 0em;
+    background-color: transparent;
+    transition: none;
+    opacity: 1;
+}
+
+#experience .experience-container .tab-content .tab-pane .featuredLink a.btn {
+    border: 1px solid var(--primary-color);
+    border-radius: .75rem;
+    transition: none;
+}
+
+#experience .experience-container .tab-content .tab-pane .featuredLink a.btn:focus {
+    box-shadow: none;
+}
+
+#experience .experience-container .tab-content .tab-pane .featuredLink a.btn:hover {
+    color: var(--text-color) !important;
+    opacity: 0.7;
+}
+
+/* Education */
+
+#education .container > h3 {
+    color: var(--text-secondary-color) !important;
+}
+
+#education .row .index {
+    opacity: 0.8;
+    padding: 13px 20px;
+    line-height: 0%;
+    border-radius: 50%;
+    max-height: 50px;
+    z-index: 2;
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    font-weight: bold;
+}
+
+#education .card * {
+    background-color: var(--secondary-color) !important;
+}
+
+#education .card {
+    border-radius: 1.5rem;
+    box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
+    border: 2px solid var(--text-secondary-color) !important;
+    transition: box-shadow .2s linear,opacity .2s linear;
+    transition: transform 0.2s;
+}
+
+#education .card .card-body {
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+@media all and (max-width:768px) {
+    #education .card .card-body {
+        padding: 2rem 1rem;
+    }
+}
+
+#education .card:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 11px rgb(15 80 100 / 16%);
+    border: 2px solid var(--primary-color) !important;
+}
+
+#education .card .card-body .education-content a {
+    color: var(--primary-color) !important;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+#education .card .card-body > a h6 {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-color) !important;
+}
+
+#education .card .card-body > a h6::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    bottom: 0.37em;
+    background-color: var(--primary-color);
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    opacity: 0.5;
+}
+
+#education .card .card-body > a h6:hover::after, #education .card .card-body > a h6:focus::after, #education .card .card-body > a h6:active::after {
+    width: 100%;
+}
+
+#education .card .card-body a.btn {
+    opacity: 0.9;
+    border: 1px solid var(--primary-color) !important;
+    color: var(--text-color) !important;
+    border-radius: .75rem;
+    box-shadow: none;
+    transition: none;
+}
+
+#education .card .card-body a.btn:hover {
+    opacity: 0.8;
+}
+
+/* achievements */
+
+#achievements a {
+    text-decoration: none;
+}
+
+#achievements h3 {
+    color: var(--text-secondary-color) !important;
+}
+
+#achievements .card {
+    cursor: context-menu;
+    background-color: var(--secondary-color) !important;
+    border-radius: 1rem;
+    box-shadow: 0 0 36px rgba(0,0,0,0.1);
+    /* transform: translate3d(0, 0, 0); */
+    transition: box-shadow .2s linear,opacity .2s linear;
+    border: 2px solid transparent;
+}
+
+#achievements a.card {
+    cursor: alias;
+}
+
+#achievements .card h5 {
+    color: var(--text-color) !important;
+    opacity: 0.9;
+}
+
+#achievements .card:hover {
+    border: 2px solid var(--text-color);
+    transition: .3s;
+}
+#achievements .card:focus {
+    border: 2px solid var(--text-color);
+    transition: .3s;
+}
+
+#achievements .card-text {
+    background-color: var(--secondary-color) !important;
+    color: var(--text-secondary-color) !important;
+}
+
+#achievements img {
+    border-radius: 0.7rem;
+}
+
+/* contact */
+
+#contact h3 {
+    color: var(--text-secondary-color) !important;
+}
+
+#contact .btn {
+    transition: none;
+    transition: opacity 0.3s;
+    border-radius: .5rem !important;
+    border-color: var(--primary-color) !important;
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+}
+
+#contact .btn:hover {
+    opacity: .7;
+}
+
+#contact .btn:focus {
+    box-shadow: none !important;
+}
+
+#contact form .form-control {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: .7rem;
+    border: 1px solid var(--text-secondary-color);
+    box-shadow: 0px 8px 56px rgb(15 80 100 / 5%);
+}
+
+#contact-form-status {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+#contact-form-status svg {
+    height: 18px;
+    width: 18px;
+}
+
+#contact-form-status button {
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    box-shadow: 0px 8px 56px rgb(15 80 100 / 5%);
+    font-size: .6rem !important;
+}
+
+#contact-form-status .alert {
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 56px rgb(15 80 100 / 5%);
+    padding: .5rem 1rem;
+}

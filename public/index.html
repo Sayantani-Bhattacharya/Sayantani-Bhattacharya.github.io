@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/home/sayantani/Documents/Sayantani-Bhattacharya.github.io/favOG.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Sayantani&#39;s portfolio" />
+<meta property="og:description" content="Text about my cool site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/" /><meta property="og:site_name" content="Hugo Profile" />
+
+
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Sayantani&#39;s portfolio"/>
+<meta name="twitter:description" content="Text about my cool site"/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content=Text&#32;about&#32;my&#32;cool&#32;site>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
+
+  <title>
+Sayantani&#39;s portfolio
+
+  </title>
+</head>
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+
+<script>
+    var prevScrollPos = window.pageYOffset;
+    window.addEventListener("scroll", function showHeaderOnScroll() {
+        let profileHeaderElem = document.getElementById("profileHeader");
+        let currentScrollPos = window.pageYOffset;
+        let resetHeaderStyle = false;
+        let showNavBarOnScrollUp =  true ;
+        let showNavBar = showNavBarOnScrollUp ? prevScrollPos > currentScrollPos : currentScrollPos > 0;
+        if (showNavBar) {
+            profileHeaderElem.classList.add("showHeaderOnTop");
+        } else {
+            resetHeaderStyle = true;
+        }
+        if(currentScrollPos === 0) {
+            resetHeaderStyle = true;
+        }
+        if(resetHeaderStyle) {
+            profileHeaderElem.classList.remove("showHeaderOnTop");
+        }
+        prevScrollPos = currentScrollPos;        
+    });
+</script>
+
+
+
+<header id="profileHeader">
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                Sayantani&#39;s portfolio
+                
+            </a>
+
+            
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Search'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Search' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Featured Projects
+                        </a>
+                    </li>
+                    
+
+                    
+
+                    
+
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/posts/publications/" title="Publications">
+                            
+                            Publications
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/posts/resume/" title="Resume Link">
+                            
+                            Resume
+                        </a>
+                    </li>
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle" style="min-height: initial !important;">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <h3>
+                    Hey, I&#39;m
+                </h3>
+                <h2>
+                    Sayantani Bhattacharya...
+                </h2>
+                <h2>
+                    
+                </h2>
+                <h4 class="animate">
+                </h4>
+                <p class="hero-content">
+                    
+                </p>
+
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://github.com/Sayantani-Bhattacharya" target="_blank" class="btn social-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/sayantani-bhattacharya-19a419175/" target="_blank" class="btn social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="mailto:sayantanibhattacharya2025@u.northwestern.edu?subject=Hello!&amp;body=Lets%20change%20the%20world%20together!" target="_blank" class="btn social-icon">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </span>
+    
+
+    
+</span></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="/images/profilePic.png"
+                            class="img-thumbnail mx-auto"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Featured Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Collaborative Quadruped Fleet." onclick="location.href='\/posts\/quadruped-fleet\/';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/Quadruped_Fleet/QuadrupedFleet.gif" alt="Collaborative Quadruped Fleet.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Visual-SLAM</span>
+                            
+                            <span class="badge badge-secondary">LiDAR-SLAM</span>
+                            
+                            <span class="badge badge-secondary">High-Level controls</span>
+                            
+                            <span class="badge badge-secondary">Navigation</span>
+                            
+                            <span class="badge badge-secondary">Jetson</span>
+                            
+                            <span class="badge badge-secondary">C&#43;&#43;</span>
+                            
+                            <span class="badge badge-secondary">ROS2</span>
+                            
+                            <span class="badge badge-secondary">Point cloud library</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Collaborative Quadruped Fleet.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="/posts/quadruped-fleet/" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Mini Golf using Franka arm." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/Apex_Putter';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/golf/golf.gif" alt="Mini Golf using Franka arm.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">ROS2</span>
+                            
+                            <span class="badge badge-secondary">Move Group API</span>
+                            
+                            <span class="badge badge-secondary">Computer Vision</span>
+                            
+                            <span class="badge badge-secondary">Robotic Manipulation</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Mini Golf using Franka arm.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Apex_Putter%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Apex_Putter" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/Apex_Putter" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Dual Player Table Tennis." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/Neural-Net-Netters';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/tennis.gif" alt="Dual Player Table Tennis.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Deep Reinforcement Learning</span>
+                            
+                            <span class="badge badge-secondary">DDPG</span>
+                            
+                            <span class="badge badge-secondary">Unity ML Agents</span>
+                            
+                            <span class="badge badge-secondary">Multi-Agent Systems</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Numpy</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Dual Player Table Tennis.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Neural-Net-Netters%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Deep RL Based Arm Control." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/Deep-RL-Arm-Control';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/DRL_arm.gif" alt="Deep RL Based Arm Control.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Deep Reinforcement Learning</span>
+                            
+                            <span class="badge badge-secondary">DDPG</span>
+                            
+                            <span class="badge badge-secondary">Unity ML Agents</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Numpy</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Deep RL Based Arm Control.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Trained multiple double-jointed arms to move to target locations.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Deep Q-Learning based navigation." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/DQN-Based-Navigation';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/DQN_nav.gif" alt="Deep Q-Learning based navigation.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Reinforcement Learning</span>
+                            
+                            <span class="badge badge-secondary">Q-Learning</span>
+                            
+                            <span class="badge badge-secondary">Unity ML Agents</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Numpy</span>
+                            
+                            <span class="badge badge-secondary">Navigation</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Deep Q-Learning based navigation.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Trained an agent to navigate (and collect bananas!) in a large, square world.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/DQN-Based-Navigation%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Pen Grasping Challenge." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/ThePenChallenge';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/pen.gif" alt="Pen Grasping Challenge.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">OpenCV</span>
+                            
+                            <span class="badge badge-secondary">Robotic Manipulation</span>
+                            
+                            <span class="badge badge-secondary">Computer Vision</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Pen Grasping Challenge.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            PincherX100 Arm programmed to detect, calibrate, manipulate and grasp a pen using OpenCV and depth sensing via Intel RealSense D435i.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/ThePenChallenge%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/ThePenChallenge" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/ThePenChallenge" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Mini Quadraped Motion." onclick="location.href='\/posts\/jack-in-box\/';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/petoi/petoiOG.gif" alt="Mini Quadraped Motion.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Robotic Manipulation</span>
+                            
+                            <span class="badge badge-secondary">Gait Planning</span>
+                            
+                            <span class="badge badge-secondary">Sensor-Motor Control</span>
+                            
+                            <span class="badge badge-secondary">Arduino</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Mini Quadraped Motion.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A mini quadraped robot programmed to walk, trot, and run using inverse kinematics and gait planning.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Mini_Quadraped%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Mini_Quadraped" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="/posts/jack-in-box/" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Kuka YouBot trajectory planning and control." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/Manipulation_Capstone_Project';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/youBot_sim/mk.gif" alt="Kuka YouBot trajectory planning and control.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Robotic Manipulation</span>
+                            
+                            <span class="badge badge-secondary">PID Control</span>
+                            
+                            <span class="badge badge-secondary">Trajectory Planning</span>
+                            
+                            <span class="badge badge-secondary">CoppeliaSim</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Kuka YouBot trajectory planning and control.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A Kuka YouBot programmed to plan trajectory and control the arm to pick and place object in CopelliaSim.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="CNN Sketch Classifier." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/CNN_Sketch_Classifier';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/sketch.gif" alt="CNN Sketch Classifier.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Machine Learning</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">tensorflow</span>
+                            
+                            <span class="badge badge-secondary">Numpy</span>
+                            
+                            <span class="badge badge-secondary">Neural Nerworks</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">CNN Sketch Classifier.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A Convolutional Neural Network trained to classify sketches using dataset containing ~20,000 sketches distriburted over 250 object categories.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Dynamics modeling from scratch of jack bouncing within the moving box boundaries." onclick="location.href='\/posts\/jack-in-box\/';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/jack_in_box/sim.gif" alt="Dynamics modeling from scratch of jack bouncing within the moving box boundaries.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Euler-Lagrangian Equations</span>
+                            
+                            <span class="badge badge-secondary">Impact Equations</span>
+                            
+                            <span class="badge badge-secondary">Python</span>
+                            
+                            <span class="badge badge-secondary">Sympy</span>
+                            
+                            <span class="badge badge-secondary">Numpy</span>
+                            
+                            <span class="badge badge-secondary">Control</span>
+                            
+                            <span class="badge badge-secondary">Dynamics</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Dynamics modeling from scratch of jack bouncing within the moving box boundaries.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            The simulation from scratch involves with Python and control theories, including Euler-Lagrangian equations and impact laws.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/2D_Dynamic_simulation%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/2D_Dynamic_simulation" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="/posts/jack-in-box/" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Linux System Monitor." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/Linux-System-Monitor';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/monitor.png" alt="Linux System Monitor.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">C&#43;&#43;</span>
+                            
+                            <span class="badge badge-secondary">Linux</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Linux System Monitor.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A system monitor system parallel to htop, that displays the CPU, process IDs, memory usage, etc of a Linux system.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="mailto:?subject=Exciting%20Project&amp;body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Linux-System-Monitor%0D%0A%0D%0AThanks!" target="_blank">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </span>
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Linux-System-Monitor" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/Linux-System-Monitor" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Traffic-Flow-Simulation." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/Traffic-Flow-Simulation';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/traffic_simulation.gif" alt="Traffic-Flow-Simulation.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">C&#43;&#43;</span>
+                            
+                            <span class="badge badge-secondary">Linux</span>
+                            
+                            <span class="badge badge-secondary">Concurrency</span>
+                            
+                            <span class="badge badge-secondary">Multi-Agent Systems</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Traffic-Flow-Simulation.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Built a suitable and thread-safe communication protocol between vehicles and intersections to complete the simulation.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Traffic-Flow-Simulation" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/Traffic-Flow-Simulation" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Open Street Map Route Planner." onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/Open-Street-Map-Route-Planner';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/map.png" alt="Open Street Map Route Planner.">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">C&#43;&#43;</span>
+                            
+                            <span class="badge badge-secondary">Path planning</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Open Street Map Route Planner.</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A* based search algorithm to find the shortest path between two points in a map.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Chatbot" onclick="location.href='https:\/\/github.com\/Sayantani-Bhattacharya\/Chatbot';" style="cursor: pointer;">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/projects/chatbot_demo.gif" alt="Chatbot">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">C&#43;&#43;</span>
+                            
+                            <span class="badge badge-secondary">Memory Management</span>
+                            
+                            <span class="badge badge-secondary">Data Processing</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Chatbot</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A simple chatbot that can answer questions using info from a presaved database and have a conversation with the user.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Sayantani-Bhattacharya/Chatbot" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Sayantani-Bhattacharya/Chatbot" target="_blank">
+                                Read More
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    
+    
+
+    <div class="text-center pt-2">
+    
+    <span class="px-1">
+        <a href="https://github.com/Sayantani-Bhattacharya" aria-label="github">
+            <img src="/images/github_logo.png" alt="GitHub" style="width: 3.4em; height: 3.4em; vertical-align: middle;">           
+            
+            
+        </a>
+    </span>
+    
+
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/sayantani-bhattacharya-19a419175/" aria-label="linkedin">
+        <img src="/images/linkedin_logo.png" alt="Gmail"  alt="Gmail Logo" style="width: 2.4em; height: 2.4em; vertical-align: middle;">
+    </a>        
+    
+
+    
+
+    
+    <span class="px-1">
+        <a href="mailto:sayantanibhattacharya2025@u.northwestern.edu?subject=Hello!&amp;body=Lets%20change%20the%20world%20together!" aria-label="email">
+        <img src="/images/gmail_logo.png" alt="Gmail"  alt="Gmail Logo" style="width: 3.4em; height: 3.4em; vertical-align: middle;">
+    </a>        
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            &copy; 2025  Sayantani Bhattacharya
+            
+            </div>
+        </div>
+    </div>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+    <script src="/js/search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
+</body>
+
+</html>
