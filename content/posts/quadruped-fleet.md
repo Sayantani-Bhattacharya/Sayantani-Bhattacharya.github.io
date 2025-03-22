@@ -45,7 +45,7 @@ By all means this is just the first iteration and needs good work for being depl
     <img src="/images/projects/Quadruped_Fleet/go2.png" alt="Robot Fleet" width="900" height="auto">
 </div>
 
-Hardware Setup: Connecting laptop with Ethernet cable to Unitree network and am using CycloneDDS as ROS middleware. This cmbination seemed best for least latency of data transfer. Due to time constraints I did not configure Jetson for GO2.
+Hardware Setup: Connecting laptop with Ethernet cable to Unitree network and CycloneDDS as ROS Middleware. This combination seemed best for least latency of data transfer. Due to time constraints I did not configure Jetson for GO2.
 Implemented high level controls that interacts with the Unitree GO2 ROS2 SDK. [**Github Link**](https://github.com/Sayantani-Bhattacharya/unitree_ros2/tree/1b3b20c626f881d910046c1452aeb47b24cac752)
 
 
@@ -138,21 +138,31 @@ Jetson Orin Nano, powered by Unitree Power port, connected to buck converter (24
     </div>
 </div>
 
-
-## Manual Navigation Demo
 <!-- Rviz: -->
 <!-- jetson pics/ videos: -->
 <!-- Aut Nav, obs avoidance: video -->
 
-## Autonomous Navigation Demo
 <div style="text-align: center; margin-bottom: 30px;">
-    <img src="/images/projects/Quadruped_Fleet/go1AutNav.gif" alt="Robot Fleet" width="auto" height="400">
-</div> 
+    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <div style="flex: 1; text-align: center;">
+            <h3>Manual Navigation Demo</h3>
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/18ex5gOv4eQ" 
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div style="flex: 1; text-align: center;">
+            <h3>Autonomous Navigation Demo</h3>
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/BLLBG1NMcD8" 
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
-## Obstacle Avoidance Demo
 <div style="text-align: center; margin-bottom: 30px;">
-    <img src="/images/projects/Quadruped_Fleet/go1ObsAvoid.gif" alt="Robot Fleet" width="auto" height="400">
-</div> 
+    <h3>Obstacle Avoidance Demo</h3>
+    <iframe width="650" height="400" src="https://www.youtube.com/embed/5o6i7ej4Icw" 
+    frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 
 <!-- _________________________________________________________________________________________________________ -->
@@ -166,8 +176,13 @@ I am using a Zed 2i camera mounted on and powered by GO1, connected to Jetson Or
 
 Stereo vision based Point Cloud generation by Zed:
 <div style="text-align: center; margin-bottom: 30px;">
-    <img src="/images/projects/Quadruped_Fleet/point_cloud_zed.png" alt="After Filtering" width="600" height="auto">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/50-m0Ro0O8c" 
+    frameborder="0" allowfullscreen></iframe>
 </div>
+
+<!-- <div style="text-align: center; margin-bottom: 30px;">
+    <img src="/images/projects/Quadruped_Fleet/point_cloud_zed.png" alt="After Filtering" width="600" height="auto">
+</div> -->
 
 Position Tracking (video from Zed Official site):
 <div style="text-align: center; margin-bottom: 30px;">
