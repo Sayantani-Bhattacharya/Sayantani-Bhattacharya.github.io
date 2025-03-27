@@ -65,9 +65,16 @@ Implemented [**manual navigation package**](https://github.com/Sayantani-Bhattac
     <p style="font-weight: bold; margin-bottom: 5px;">Publishing the Nav goals from RViz</p>
     <img src="/images/projects/Quadruped_Fleet/ManualNavGO2.gif" alt="Robot Fleet" width="auto" height="400">
 </div>  -->
+
+<!-- Video Section with Responsive YouTube Video -->
 <div style="text-align: center; margin-bottom: 30px;">
-    <iframe width="600" height="400" src="https://www.youtube.com/embed/QTDRBMnHejI" 
-    frameborder="0" allowfullscreen></iframe>
+    <p style="font-weight: bold; margin-bottom: 5px;">Publishing the Nav goals from RViz</p>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+        <iframe src="https://www.youtube.com/embed/QTDRBMnHejI" 
+        frameborder="0" allowfullscreen 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div>
 </div>
 
 <!-- _________________________________________________________________________________________________________ -->
@@ -78,10 +85,22 @@ Simultaneous Localization and Mapping (SLAM) is a fundamental technology in auto
 
 Unitree GO2 has an inbuild 4D LiDAR which publishes pointCloud data, which encodes the ToF in form of intensity values. And am using the ROS2 RTabMap package, feeding in the Odom data from Unitree topic and filtered pointcloud, to generate map. I use the RTabMap ICP (Iterative Closest Point) algorithm to improve the mapping accuracy. Also GO2 has a highly mismatched frequency rate of publishing different sensor datas, so ensure that all packages use a sync or queuing mechanism.
 
+<!-- Video Section with Responsive YouTube Video -->
 <div style="text-align: center; margin-bottom: 30px;">
+    <!-- <p style="font-weight: bold; margin-bottom: 5px;">Publishing the Nav goals from RViz</p> -->
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+        <iframe src="https://www.youtube.com/embed/HLEDBnuZWu8" 
+        frameborder="0" allowfullscreen 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div>
+</div>
+
+
+<!-- <div style="text-align: center; margin-bottom: 30px;">
     <iframe width="900" height="500" src="https://www.youtube.com/embed/HLEDBnuZWu8" 
     frameborder="0" allowfullscreen></iframe>
-</div>
+</div> -->
 
 
 #### Point-Cloud-Filtering
@@ -142,7 +161,7 @@ Jetson Orin Nano, powered by Unitree Power port, connected to buck converter (24
 <!-- jetson pics/ videos: -->
 <!-- Aut Nav, obs avoidance: video -->
 
-<div style="text-align: center; margin-bottom: 30px;">
+<!-- <div style="text-align: center; margin-bottom: 30px;">
     <div style="display: flex; justify-content: space-between; margin-top: 20px;">
         <div style="flex: 1; text-align: center;">
             <h3>Manual Navigation Demo</h3>
@@ -161,8 +180,40 @@ Jetson Orin Nano, powered by Unitree Power port, connected to buck converter (24
     <h3>Obstacle Avoidance Demo</h3>
     <iframe width="650" height="400" src="https://www.youtube.com/embed/5o6i7ej4Icw" 
     frameborder="0" allowfullscreen></iframe>
+</div> -->
+
+<div style="text-align: center; margin-bottom: 30px;">
+    <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+        <div style="flex: 1; text-align: center; margin-right: 20px;">
+            <h3>Manual Navigation Demo</h3>
+            <div style="position: relative; padding-bottom: 177.78%; height: 0; overflow: hidden; max-width: 315px;">
+                <iframe src="https://www.youtube.com/embed/18ex5gOv4eQ" 
+                frameborder="0" allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
+            </div>
+        </div>
+        <div style="flex: 1; text-align: center; margin-left: 20px;">
+            <h3>Autonomous Navigation Demo</h3>
+            <div style="position: relative; padding-bottom: 177.78%; height: 0; overflow: hidden; max-width: 315px;">
+                <iframe src="https://www.youtube.com/embed/BLLBG1NMcD8" 
+                frameborder="0" allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
+            </div>
+        </div>
+    </div>
 </div>
 
+<div style="text-align: center; margin-bottom: 30px;">
+    <h3>Obstacle Avoidance Demo</h3>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+        <iframe src="https://www.youtube.com/embed/5o6i7ej4Icw" 
+        frameborder="0" allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div>
+</div>
 
 
 <!-- _________________________________________________________________________________________________________ -->
@@ -174,11 +225,17 @@ Visual SLAM uses camera sensors and computer vision algorithms to map environmen
 
 I am using a Zed 2i camera mounted on and powered by GO1, connected to Jetson Orin Nano. Zed 2i has ROS2 SDK and built in image processing and SLAM algorithms. I am using its [Visual-Inertial Odometry (VIO)**](https://www.stereolabs.com/docs/positional-tracking) for generating occupancy grid. The 3D map generated needs to be projected to 2D for Nav2 to use it. I am using the Map filtering node written by [**Aditya Nair**](https://github.com/GogiPuttar/Search-and-Rescue_Robot_Dog_Unitree_Go1/tree/main) specifically for Zed 2i. 
 
-Stereo vision based Point Cloud generation by Zed:
+
 <div style="text-align: center; margin-bottom: 30px;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/50-m0Ro0O8c" 
-    frameborder="0" allowfullscreen></iframe>
+    <h4>Stereo vision based Point Cloud generation by Zed:</h4>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+        <iframe src="https://www.youtube.com/embed/50-m0Ro0O8c" 
+        frameborder="0" allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div>
 </div>
+
 
 <!-- <div style="text-align: center; margin-bottom: 30px;">
     <img src="/images/projects/Quadruped_Fleet/point_cloud_zed.png" alt="After Filtering" width="600" height="auto">
@@ -207,8 +264,13 @@ This is just my opinion mainly based on the obsservations made while working on 
 I have used the same technique both the quadruped's exploration. Wherein the occupancy grid and current Odom is used to detect "frontiers" (spaces in map that are to be explored) and one of them is optimally chosen as the nest goal. A lot can be modified in how its being chosen. Currently the GO1 has a tendency to choose the periferal frontier, and thus is more suited for round areas but not for corridor-like environment. And GO2 has a tendency is go for consecutive goals, which reduces the breadth of area covered.
 
 <div style="text-align: center; margin-bottom: 30px;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/kwPYlhcrLvA" 
-    frameborder="0" allowfullscreen></iframe>
+    <h4>As observered on GO1 Display screen wihle exploration:</h4>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000;">
+        <iframe src="https://www.youtube.com/embed/kwPYlhcrLvA" 
+        frameborder="0" allowfullscreen
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div>
 </div>
 
 <!-- _________________________________________________________________________________________________________ -->
@@ -218,7 +280,7 @@ The final step now, is to merge the occupancy grids generated by all the indivud
 The initial relative position of both agents are known and I also have the IMU data of the motion series, which can be stiched into a combined map.
 
 
-I have it working in simulation based on the 🚀 [**research**](https://github.com/robo-friends/m-explore-ros2).
+I have it working in simulation based on the [**research**](https://github.com/robo-friends/m-explore-ros2).
 
 
 <div style="text-align: center; margin-bottom: 30px;">
