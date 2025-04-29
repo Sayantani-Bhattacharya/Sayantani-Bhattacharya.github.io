@@ -450,27 +450,25 @@ params:
             url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/ThePenChallenge%0D%0A%0D%0AThanks!          
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
-          
-      
-
-      - title: Mini Quadraped Motion.
-        content: A mini quadraped robot programmed to walk, trot, and run using inverse kinematics and gait planning.
-        image: /images/projects/petoi/petoiOG.gif
-        featured:
-          name: Read More
-          # link: https://github.com/Sayantani-Bhattacharya/Mini_Quadraped
-          link: /posts/jack-in-box/
-        badges:
-          - "Python"
-          - "Robotic Manipulation"
-          - "Gait Planning"
-          - "Sensor-Motor Control"
-          - "Arduino"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Mini_Quadraped%0D%0A%0D%0AThanks!
-          - icon: fab fa-github
-            url: https://github.com/Sayantani-Bhattacharya/Mini_Quadraped
+       
+      # - title: Mini Quadraped Motion.
+      #   content: A mini quadraped robot programmed to walk, trot, and run using inverse kinematics and gait planning.
+      #   image: /images/projects/petoi/petoiOG.gif
+      #   featured:
+      #     name: Read More
+      #     # link: https://github.com/Sayantani-Bhattacharya/Mini_Quadraped
+      #     link: /posts/jack-in-box/
+      #   badges:
+      #     - "Python"
+      #     - "Robotic Manipulation"
+      #     - "Gait Planning"
+      #     - "Sensor-Motor Control"
+      #     - "Arduino"
+      #   links:
+      #     - icon: fa fa-envelope
+      #       url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Mini_Quadraped%0D%0A%0D%0AThanks!
+      #     - icon: fab fa-github
+      #       url: https://github.com/Sayantani-Bhattacharya/Mini_Quadraped
 
       - title: Kuka YouBot trajectory planning and control.
         content: A Kuka YouBot programmed to plan trajectory and control the arm to pick and place object in CopelliaSim.
