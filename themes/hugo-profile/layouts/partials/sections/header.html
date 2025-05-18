@@ -112,6 +112,15 @@
                     </li>
                     {{ end }}
 
+                    {{ if and (.Site.Params.featuredProjects.enable | default false) (not (.Site.Params.navbar.menus.disableFeaturedProjects | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#featuredProjects"
+                            aria-label="featuredProjects">
+                            {{ .Site.Params.featuredProjects.title | default "Featured Projects" }}
+                        </a>
+                    </li>
+                    {{ end }}
+
                     {{ if and (.Site.Params.projects.enable | default false) (not (.Site.Params.navbar.menus.disableProjects | default false)) }}
                     <li class="nav-item navbar-text">
                         <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#projects"
@@ -120,6 +129,8 @@
                         </a>
                     </li>
                     {{ end }}
+
+                    
 
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
                     <li class="nav-item navbar-text">

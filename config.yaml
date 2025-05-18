@@ -129,8 +129,8 @@ params:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     showBrandLogo: false # Show brand logo in nav bar | default is true
-    brandName: "Sayantani's portfolio" # Brand name for the brand | default is the title variable
-    disableSearch: false
+    brandName: "Portfolio" # Brand name for the brand | default is the title variable
+    disableSearch: true
     searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
@@ -140,6 +140,7 @@ params:
       disableExperience: false
       disableEducation: false
       disableProjects: false
+      disableFeaturedProjects: false
       disableAchievements: false
       disableContact: false
       # Resume Download: When you click on the Resume menu item, the browser will download the file specified in the url field.
@@ -327,11 +328,9 @@ params:
   # #     - title: Google Summer of Code
   # #       content: Contributed to a open source project.
   # #       url: https://example.com
-
-  # projects
-  projects:
+  featuredprojects:
     enable: true
-    title: "Featured Projects"
+    # title: "Custom Name"
     items:
       - title: Collaborative Quadruped Fleet. #Decentralised.
         content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
@@ -355,6 +354,24 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs     
 
+      - title: Bio-inspired Underwater ROV.
+        content: Developing a system for rovers to follow a prey underwater, using the sensory information of a seal whisker-like structure.
+        image: /images/projects/SealBot/nemo.png
+        featured:
+          name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+          link: /posts/rov/
+        badges:
+          - "ROS2"
+          - "Computer Vision"
+          - "Perception"
+          - "C++"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            # url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs      
+
       - title: Mini Golf using Franka arm.
         content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
         image: /images/projects/golf/golf.gif
@@ -373,12 +390,18 @@ params:
             url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Apex_Putter%0D%0A%0D%0AThanks!
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Apex_Putter
-      
+
+
+  # projects
+  projects:
+    enable: true
+    # title: "Projects"
+    items:
       - title: Dual Player Table Tennis. 
         content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
         image: /images/projects/tennis.gif
         featured:
-          name: Read More
+          # name: Read More
           # link: /posts/my-third-post/
           link: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
         badges:
@@ -394,11 +417,47 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
 
+      - title: Pen Grasping Challenge.
+        content: PincherX100 Arm programmed to detect, calibrate, manipulate and grasp a pen using OpenCV and depth sensing via Intel RealSense D435i.
+        image: /images/projects/pen.gif
+        featured:
+          # name: Read More
+          # link: /posts/my-fourth-post/
+          link: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
+        badges:
+          - "OpenCV"
+          - "Robotic Manipulation"
+          - "Computer Vision"
+          - "Python"          
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/ThePenChallenge%0D%0A%0D%0AThanks!          
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
+
+      - title: Bee Dance Swarm Intelligence.
+        content: Waggle dance communication of bee swams for optimal nectar collection using Mutli-Agent Reinforcement Learning.
+        image: /images/projects/BeeSwarm/BeeInitialRun.gif
+        featured:
+          # name: Read More
+          link: https://github.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence
+          # link: /posts/my-first-post/
+        badges:
+          - "MARL"
+          - "Stable Baselines3"
+          - "PyTorch"
+          - "PPO"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence%0D%0A%0D%0AThanks!
+          - icon: fab fa-github
+            url: https://github.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence
+
       - title: Deep RL Based Arm Control.
         content: Trained multiple double-jointed arms to move to target locations.
         image: /images/projects/DRL_arm.gif
         featured:
-          name: Read More
+          # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control
           # link: /posts/my-first-post/
         badges:
@@ -417,7 +476,7 @@ params:
         content: Trained an agent to navigate (and collect bananas!) in a large, square world.
         image: /images/projects/DQN_nav.gif
         featured:
-          name: Read More
+          # name: Read More
           # link: /posts/my-fourth-post/
           link: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
         badges:
@@ -433,23 +492,6 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
 
-      - title: Pen Grasping Challenge.
-        content: PincherX100 Arm programmed to detect, calibrate, manipulate and grasp a pen using OpenCV and depth sensing via Intel RealSense D435i.
-        image: /images/projects/pen.gif
-        featured:
-          name: Read More
-          # link: /posts/my-fourth-post/
-          link: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
-        badges:
-          - "OpenCV"
-          - "Robotic Manipulation"
-          - "Computer Vision"
-          - "Python"          
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20amazing%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/ThePenChallenge%0D%0A%0D%0AThanks!          
-          - icon: fab fa-github
-            url: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
        
       # - title: Mini Quadraped Motion.
       #   content: A mini quadraped robot programmed to walk, trot, and run using inverse kinematics and gait planning.
@@ -474,7 +516,7 @@ params:
         content: A Kuka YouBot programmed to plan trajectory and control the arm to pick and place object in CopelliaSim.
         image: /images/projects/youBot_sim/mk.gif
         featured:
-          name: Read More
+          # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project
           # link: /posts/my-first-post/
         badges:
@@ -493,7 +535,7 @@ params:
         content: A Convolutional Neural Network trained to classify sketches using dataset containing ~20,000 sketches distriburted over 250 object categories.
         image: /images/projects/sketch.gif
         featured:
-          name: Read More
+          # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier
           # link: /posts/my-first-post/
         badges:
@@ -532,7 +574,7 @@ params:
         content: A system monitor system parallel to htop, that displays the CPU, process IDs, memory usage, etc of a Linux system.
         image: /images/projects/monitor.png
         featured:
-          name: Read More
+          # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Linux-System-Monitor
           # link: /posts/my-first-post/
         badges:
@@ -548,7 +590,7 @@ params:
         content: Built a suitable and thread-safe communication protocol between vehicles and intersections to complete the simulation.
         image: /images/projects/traffic_simulation.gif
         featured:
-          name: Read More
+          # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Traffic-Flow-Simulation
         badges:
           - "C++"
@@ -563,7 +605,7 @@ params:
         content: A* based search algorithm to find the shortest path between two points in a map.
         image: /images/projects/map.png
         featured:
-          name: Read More
+          # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
         badges:
           - "C++"
@@ -576,7 +618,7 @@ params:
         content: A simple chatbot that can answer questions using info from a presaved database and have a conversation with the user.
         image: /images/projects/chatbot_demo.gif
         featured:
-          name: Read More
+          # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Chatbot
         badges:
           - "C++"
@@ -599,6 +641,7 @@ params:
       #   links:
       #     - icon: fab fa-github
       #       url: https://github.com/gurusabarish/HugoProfileV2
+
 
   # #Contact
   # contact:
@@ -633,8 +676,8 @@ params:
   # Single pages like blog and post
   singlePages:
     readTime:
-      enable: true
-      content: "min read"
+      enable: false
+      content: "Min read:"
     scrollprogress:
       enable: true
 
