@@ -99,9 +99,11 @@ params:
   mathjax: false
   # Whether the fade animations on the home page will be enabled
   animate: true
+
+  # Theme toggle at the menu: toggle does not work when inside a page.
   theme:
-    # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    disableThemeToggle: true
+    defaultTheme: "dark" # dark
   font:
     fontSize: 1rem # default: 1rem
     fontWeight: 400 # default: 400
