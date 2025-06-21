@@ -337,7 +337,6 @@ params:
         image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
         featured:
           name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
           link: /posts/quadruped-fleet/
         badges:
           - "Visual-SLAM"
@@ -359,7 +358,6 @@ params:
         image: /images/projects/SealBot/nemo.png
         featured:
           name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
           link: /posts/rov/
         badges:
           - "ROS2"
@@ -690,9 +688,9 @@ params:
     emailText: "Check out this site"
 
   datesFormat:
-    article: "Jan 2, 2006"
-    articleList: "Jan 2, 2006"
-    articleRecent: "Jan 2, 2006"
+    article: "Jan 2, 2024"
+    articleList: "Jan 2, 2024"
+    articleRecent: "Jan 2, 2024"
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
