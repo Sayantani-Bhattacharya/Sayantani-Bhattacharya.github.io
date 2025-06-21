@@ -690,10 +690,11 @@ params:
     pageNotFound: "Page not found"
     emailText: "Check out this site"
 
+# This is the fallback date, it you want to chaneg it here, also change in list.html and confirm its working correctly.
   datesFormat:
-    article: "Jan 2, 2024"
-    articleList: "Jan 2, 2024"
-    articleRecent: "Jan 2, 2024"
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>
