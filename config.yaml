@@ -156,7 +156,7 @@ params:
     intro: "Hey, I'm"
     title: "Sayantani Bhattacharya..."
     # subtitle: "A passionate Robotics Engineer."
-    # content: "I leverage my coding, design, and analysis skills to construct robots that liberate people's hands."
+    # content: "I leverage my coding, design, and analysis skills to construct robots that liberate people's hands. I leverage my coding, design, and analysis skills to construct robots that liberate people's hands." 
     image: /images/profilePic.png
     tagline1: "</Robotics Engineer>"
     tagline2: "</ Imagineer>"
@@ -343,11 +343,10 @@ params:
         badges:
           - "Visual-SLAM"
           - "LiDAR-SLAM"
-          - "High-Level controls"
+          - "High-Level Control"
           - "Navigation"
-          - "Jetson"
           - "C++"
-          - "ROS2"          
+          - "ROS 2"          
           - "Point cloud library"          
         links:
           - icon: fa fa-envelope
@@ -362,9 +361,11 @@ params:
           name: Read More
           link: /posts/rov/
         badges:
-          - "ROS2"
-          - "Computer Vision"
           - "Perception"
+          - "Computer Vision"
+          - "CAD"
+          - "ROS 2"  
+          - "Blue OS"        
           - "C++"
         links:
           - icon: fa fa-envelope
@@ -380,10 +381,10 @@ params:
           link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
           # link: /posts/my-first-post/
         badges:
-          - "ROS2"
-          - "Move Group API"
-          - "Computer Vision"
           - "Robotic Manipulation"
+          - "Computer Vision"          
+          - "ROS 2"
+          - "Move Group API"
           - "Python"
         links:
           - icon: fa fa-envelope

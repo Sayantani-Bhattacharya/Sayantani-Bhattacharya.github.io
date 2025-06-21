@@ -127,8 +127,10 @@ header .navbar.animate {
 }
 
 #hero h2 {
-    transform: translate(0, 0); /* Remove unnecessary transforms */
-    font-size: clamp(32px, 8vw, 64px); /* Adjust for better scaling */
+    transform: translate(0, 0);
+    /* Remove unnecessary transforms */
+    font-size: clamp(24px, 6vw, 48px);
+    /* Adjust for better scaling */
     color: var(--primary-color) !important;
     /* text-align: center; */
     margin: 0 auto;
@@ -136,7 +138,7 @@ header .navbar.animate {
 
 #hero h3 {
     transform: translate(0, 0);
-    font-size: clamp(24px, 6vw, 48px);
+    font-size: clamp(18px, 4vw, 32px);
     opacity: 0.5;
     /* text-align: center; */
     margin: 0 auto;
@@ -144,7 +146,7 @@ header .navbar.animate {
 
 #hero h4 {
     transform: translate(0, 0);
-    font-size: clamp(16px, 5vw, 32px);
+    font-size: clamp(12px, 3vw, 24px);
     color: #FCD667 !important;
     opacity: 1.0;
     /* text-align: center; */
@@ -167,40 +169,49 @@ header .navbar.animate {
     transform: translate(0%, 50%);
     letter-spacing: .15em;
     opacity: 1;
-    width: 20ch; /* Set width to match the longest text (e.g., 20 characters) */ 
-    height: 1.5em; /* Set height to match the font size */
-    animation: 
+    width: 20ch;
+    /* Set width to match the longest text (e.g., 20 characters) */
+    height: 1.5em;
+    /* Set height to match the font size */
+    animation:
         typing 25s steps(30, end) infinite alternate;
-        /* blink-caret 25.75s step-end infinite, */
-        /* hideText 5s forwards infinite; */
+    /* blink-caret 25.75s step-end infinite, */
+    /* hideText 5s forwards infinite; */
     /* opacity: 0; */
-    display: inline-block; /* Ensure content doesn't affect layout */
+    display: inline-block;
+    /* Ensure content doesn't affect layout */
 }
 
 /* Dynamic Messages */
 #hero h4.animate::after {
     content: "";
     /* 35: estimated cycle time taken by curson to move back and forth the cursor */
-    animation: messages 25s steps(1, end) infinite; /* Next Cycle messages */
+    animation: messages 25s steps(1, end) infinite;
+    /* Next Cycle messages */
     display: inline-block;
     animation-delay: 0s;
 }
 
 #hero p {
     margin: 20px auto;
-    max-width: 90%; /* Ensure it fits on mobile */
+    max-width: 90%;
+    /* Ensure it fits on mobile */
     opacity: 0.8;
-    text-align: justify; /* Improve readability */
+    text-align: justify;
+    /* Improve readability */
 }
 
-#hero .image img {    
+#hero .image img {
     padding: 0;
     /* mix-blend-mode: screen; */
     border: none;
-    max-width: 100%; /* Ensure it scales properly */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; 
-    transform: translate(0, 0); /* Remove offsets */
+    max-width: 100%;
+    /* Ensure it scales properly */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    transform: translate(0, 0);
+    /* Remove offsets */
     /* filter: contrast(1.2);         */
     display: block;
     /* margin: 0 auto; */
@@ -212,7 +223,8 @@ header .navbar.animate {
 }
 
 #hero .image img:hover {
-    cursor: pointer;    /* margin: auto; */
+    cursor: pointer;
+    /* margin: auto; */
 }
 
 #hero .image.animate img:hover {
@@ -226,18 +238,19 @@ header .navbar.animate {
     line-height: 0%;
     border-radius: 50%;
     margin-top: 50px;
-    padding: 0.5rem; /* Reduced padding for better fit */
+    padding: 0.5rem;
+    /* Reduced padding for better fit */
     border: 1px solid var(--primary-color);
-    transition: all 0.3s ease; /* Smooth hover effect */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
 }
 
-#hero a.btn.social-icon img 
-{
-    width: 0.8em; /* Slightly smaller image size for scaling */
+#hero a.btn.social-icon img {
+    width: 0.8em;
+    /* Slightly smaller image size for scaling */
 }
 
-#hero a.btn.social-icon:hover 
-{
+#hero a.btn.social-icon:hover {
     opacity: 0.8;
 }
 
@@ -274,32 +287,36 @@ header .navbar.animate {
 
     #hero a.btn {
         margin-top: 30px;
-        padding: 0.5rem 1.2rem; /* Adjusted for smaller screens */
+        padding: 0.5rem 1.2rem;
+        /* Adjusted for smaller screens */
     }
 
     #hero a.btn.social-icon img {
-        width: 0.7em; /* Scale image size for smaller devices */
+        width: 0.7em;
+        /* Scale image size for smaller devices */
     }
 }
 
-#hero .hero-content > a {
+#hero .hero-content>a {
     display: inline-block;
     text-decoration: none;
     color: var(--primary-color) !important;
 }
 
-#hero .hero-content > a::after {
+#hero .hero-content>a::after {
     content: "";
     display: block;
     width: 0px;
     height: 2px;
     bottom: 0.37em;
     background-color: var(--primary-color);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0.5;
 }
 
-#hero .hero-content > a:hover::after, #hero .hero-content > a:focus::after, #hero .hero-content > a:active::after {
+#hero .hero-content>a:hover::after,
+#hero .hero-content>a:focus::after,
+#hero .hero-content>a:active::after {
     width: 100%;
 }
 
@@ -387,7 +404,7 @@ header .navbar.animate {
     background-color: transparent !important;
 }
 
-#experience .tab-pane > * {
+#experience .tab-pane>* {
     opacity: 0.9;
 }
 
@@ -400,7 +417,7 @@ header .navbar.animate {
     padding-bottom: 1%;
 }
 
-#experience .experience-container .tab-content > .tab-pane p {
+#experience .experience-container .tab-content>.tab-pane p {
     padding: 1% 0;
     margin: 0;
 }
@@ -413,7 +430,7 @@ header .navbar.animate {
 
 #experience .nav-item .nav-link {
     color: var(--text-color) !important;
-    border-bottom: 2px solid transparent; 
+    border-bottom: 2px solid transparent;
     border-radius: 0%;
     transition: none;
     cursor: pointer;
@@ -421,11 +438,11 @@ header .navbar.animate {
 
 #experience .nav-item .nav-link.active {
     color: var(--text-color) !important;
-    border-bottom: 2px solid var(--primary-color); 
+    border-bottom: 2px solid var(--primary-color);
     opacity: 0.8;
 }
 
-#experience .nav-item .nav-link.active:hover { 
+#experience .nav-item .nav-link.active:hover {
     transition: none !important;
 }
 
@@ -448,11 +465,13 @@ header .navbar.animate {
     height: 2px;
     bottom: 0.37em;
     background-color: var(--primary-color);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0.5;
 }
 
-#experience a:hover::after, #experience a:focus::after, #experience a:active::after {
+#experience a:hover::after,
+#experience a:focus::after,
+#experience a:active::after {
     width: 100%;
 }
 
@@ -502,7 +521,7 @@ header .navbar.animate {
 
 /* Education */
 
-#education .container > h3 {
+#education .container>h3 {
     color: var(--text-secondary-color) !important;
 }
 
@@ -526,7 +545,7 @@ header .navbar.animate {
     border-radius: 1.5rem;
     box-shadow: 0px 8px 56px rgb(15 80 100 / 16%);
     border: 2px solid var(--text-secondary-color) !important;
-    transition: box-shadow .2s linear,opacity .2s linear;
+    transition: box-shadow .2s linear, opacity .2s linear;
     transition: transform 0.2s;
 }
 
@@ -553,24 +572,26 @@ header .navbar.animate {
     opacity: 0.9;
 }
 
-#education .card .card-body > a h6 {
+#education .card .card-body>a h6 {
     display: inline-block;
     text-decoration: none;
     color: var(--primary-color) !important;
 }
 
-#education .card .card-body > a h6::after {
+#education .card .card-body>a h6::after {
     content: "";
     display: block;
     width: 0px;
     height: 2px;
     bottom: 0.37em;
     background-color: var(--primary-color);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0.5;
 }
 
-#education .card .card-body > a h6:hover::after, #education .card .card-body > a h6:focus::after, #education .card .card-body > a h6:active::after {
+#education .card .card-body>a h6:hover::after,
+#education .card .card-body>a h6:focus::after,
+#education .card .card-body>a h6:active::after {
     width: 100%;
 }
 
@@ -601,9 +622,9 @@ header .navbar.animate {
     cursor: context-menu;
     background-color: var(--secondary-color) !important;
     border-radius: 1rem;
-    box-shadow: 0 0 36px rgba(0,0,0,0.1);
+    box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
     /* transform: translate3d(0, 0, 0); */
-    transition: box-shadow .2s linear,opacity .2s linear;
+    transition: box-shadow .2s linear, opacity .2s linear;
     border: 2px solid transparent;
 }
 
@@ -620,6 +641,7 @@ header .navbar.animate {
     border: 2px solid var(--text-color);
     transition: .3s;
 }
+
 #achievements .card:focus {
     border: 2px solid var(--text-color);
     transition: .3s;
