@@ -8,7 +8,16 @@ draft = false
     <img src="/images/projects/Quadruped_Fleet/QuadrupedFleet.gif" alt="Robot Fleet" width="200" height="auto">
 </div> -->
 
+<div style="text-align: center; margin-bottom: 30px;">
+    🚀 <a href="https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs" style="font-weight: bold;">Link to Project Github</a>
+</div>
+
 ## Overview
+
+
+<div style="text-align: center; margin-bottom: 10px;">
+    <img src="/images/projects/Quadruped_Fleet/QuadrupedFleet.gif" alt="Robot Fleet" width="600" height="auto">
+</div>
 
 <!-- Explanation of the system -->
 In times of disaster, every second counts, and reaching survivors in hazardous terrains poses significant challenges. 
@@ -20,10 +29,6 @@ This approach enhances the robustness and speed of search operations, as the fai
 Quadrupeds inherently work well in uneven terrains, and harnessing the strengths of SLAM to explore unmapped areas with LIDAR and Visual-Inertial sensor data, these robotic swarms represent
 a leap forward in disaster response, offering hope and assistance when it's needed most.
 By all means this is just the first iteration and needs good work for being deployable onsite.
-
-<div style="text-align: center; margin-bottom: 10px;">
-    <img src="/images/projects/Quadruped_Fleet/QuadrupedFleet.gif" alt="Robot Fleet" width="600" height="auto">
-</div>
 
 <!-- <div style="text-align: center; font-size: 20px; margin-top: 0px; margin-bottom: 10px"> 
     font-weight: bold; 
@@ -45,7 +50,8 @@ By all means this is just the first iteration and needs good work for being depl
     <img src="/images/projects/Quadruped_Fleet/go2.png" alt="Robot Fleet" width="900" height="auto">
 </div>
 
-Hardware Setup: Connecting laptop with Ethernet cable to Unitree network and CycloneDDS as ROS Middleware. This combination seemed best for least latency of data transfer. Due to time constraints I did not configure Jetson for GO2.
+### Hardware Setup
+Connecting laptop with Ethernet cable to Unitree network and CycloneDDS as ROS Middleware. This combination seemed best for least latency of data transfer. Due to time constraints I did not configure Jetson for GO2.
 Implemented high level controls that interacts with the Unitree GO2 ROS2 SDK. [**Github Link**](https://github.com/Sayantani-Bhattacharya/unitree_ros2/tree/1b3b20c626f881d910046c1452aeb47b24cac752)
 
 
@@ -79,7 +85,7 @@ Implemented [**manual navigation package**](https://github.com/Sayantani-Bhattac
 
 <!-- _________________________________________________________________________________________________________ -->
 
-## LiDAR-SLAM
+### LiDAR-SLAM
 
 Simultaneous Localization and Mapping (SLAM) is a fundamental technology in autonomous systems, which enables devices to perform real-time mapping while determining their position within an environment. LiDAR (Light Detection and Ranging) SLAM utilizes laser sensor technology to generate a highly accurate 3D map of the surrounding environment. By emitting laser pulses and calculating the Time of Flight (ToF), it can measure distances and map complex areas with precision.
 
@@ -143,7 +149,7 @@ Implemented autonomous navigation package with following features in ROS2 Jazzy 
     <img src="/images/projects/Quadruped_Fleet/go1.png" alt="Robot Fleet" width="900" height="auto">
 </div> 
 
-### Hardware Setup: 
+### Hardware Setup
 Jetson Orin Nano, powered by Unitree Power port, connected to buck converter (24V->12V). Zed 2i camera and a Display Screen is connected and powered by Jetson. And Jetson is connected to the same Wifi Network as Unitree GO1 (Password: 00000000)
 
 <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
@@ -220,7 +226,7 @@ Jetson Orin Nano, powered by Unitree Power port, connected to buck converter (24
 
 
 
-## Visual-SLAM
+### Visual-SLAM
 Visual SLAM uses camera sensors and computer vision algorithms to map environments and track a device’s movement in real-time. By identifying and tracking key visual features across multiple frames, Visual SLAM estimates the camera’s movement and builds a 3D map.
 
 I am using a Zed 2i camera mounted on and powered by GO1, connected to Jetson Orin Nano. Zed 2i has ROS2 SDK and built in image processing and SLAM algorithms. I am using its [Visual-Inertial Odometry (VIO)**](https://www.stereolabs.com/docs/positional-tracking) for generating occupancy grid. The 3D map generated needs to be projected to 2D for Nav2 to use it. I am using the Map filtering node written by [**Aditya Nair**](https://github.com/GogiPuttar/Search-and-Rescue_Robot_Dog_Unitree_Go1/tree/main) specifically for Zed 2i. 
@@ -307,14 +313,16 @@ And of course to **Scooby** and **Oatmeal**! It was lovely working with you both
 <br>
 <br>
 
+
+<!--  Doubts
+-> All node/ launch file descriptions?
+-> include that as another project?  -->
+
 If any of you reading this, work on the project and add some segments to the codebase would love to know about it. Most issues, and operational stuff are fresh in my mind, so feel free add issues and raise PR. Detailed setup instruction and running procedure is mentioned in the ReadMe file of each package. 
 
 
 
-🚀 [**Link to this Project Github**](https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs).
 
 
 
-<!--  Doubts
--> All node/ launch file descriptions?
--> include that as another project? 
+
