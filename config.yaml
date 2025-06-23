@@ -334,7 +334,7 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Collaborative Quadruped Fleet. #Decentralised.
+      - title: Collaborative SLAM for Quadruped Fleet #Decentralised.
         content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
         image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
         featured:
@@ -354,9 +354,9 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs     
 
-      - title: Bio-inspired Underwater ROV.
+      - title: Bio-Inspired Perception for Underwater ROV
         content: Developing a system for rovers to follow a prey underwater, using the sensory information of a seal whisker-like structure.
-        image: /images/projects/SealBot/nemo.png
+        image: /images/projects/SealBot/sealbot.gif
         featured:
           name: Read More
           link: /posts/rov/
@@ -373,7 +373,7 @@ params:
           - icon: fab fa-github
             # url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs      
 
-      - title: Mini Golf using Franka arm.
+      - title: Mini Golf using Franka Arm
         content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
         image: /images/projects/golf/golf.gif
         featured:
