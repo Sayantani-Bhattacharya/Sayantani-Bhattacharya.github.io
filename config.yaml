@@ -535,7 +535,7 @@ params:
           - "DDPG"
           - "Unity ML Agents"
           - "Python"
-          - "Numpy"          
+          - "Multi-Agent Systems"        
         links:
           - icon: fa fa-envelope
             url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
@@ -544,7 +544,7 @@ params:
 
       - title: Kuka YouBot trajectory planning and control.
         content: A Kuka YouBot programmed to plan trajectory and control the arm to pick and place object in CopelliaSim.
-        image: /images/projects/youBot_sim/mk.gif
+        image: /images/projects/youBot_sim/KUKA.gif
         featured:
           # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project
@@ -563,8 +563,8 @@ params:
 
 
       - title: F1 Ghost Car Racing using Visual-Inertial Odometry.
-        content: A Multi-player game that scores players in how accurate a defined race track is followed.
-        image: /images/projects/VIO/TurtleVIO.gif
+        content: A Multi-player game that scores players on how accurate a defined race track is followed.
+        image: /images/projects/VIO/Turtle_VIO.gif
         featured:
           # name: Read More
           link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
@@ -592,9 +592,10 @@ params:
         badges:
           - "Machine Learning"
           - "Neural Networks"
+          - "PyTorch"
           - "LSTM/GRU"
           - "Natural Language Processing"
-          - "PyTorch"
+          
         links:
           - icon: fa fa-envelope
             url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/RNN-Language-Model%0D%0A%0D%0AThanks!
@@ -651,7 +652,8 @@ params:
           link: https://github.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence
           # link: /posts/my-first-post/
         badges:
-          - "MARL"
+          - "Multi-Agent Systems"
+          - "Reinforcement Learning"
           - "Stable Baselines3"
           - "PyTorch"
           - "PPO"
