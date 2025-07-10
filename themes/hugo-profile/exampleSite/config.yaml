@@ -54,7 +54,7 @@ Menus:
 
 params:
   title: "Hugo Profile"
-  description: Text about my cool site
+  description: Sayantani's Portfolio
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 

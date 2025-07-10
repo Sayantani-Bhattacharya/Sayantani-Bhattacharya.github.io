@@ -116,7 +116,7 @@ Menus:
 
 params:
   title: "Hugo Profile"
-  description: Text about my cool site
+  description: Sayantani's Portfolio
   # staticPath: ""  # The path to serve the static files from
   favicon: "/home/sayantani/Documents/Sayantani-Bhattacharya.github.io/favOG.png"
 
@@ -415,8 +415,8 @@ params:
         image: /images/projects/golf/golf.gif
         featured:
           name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
-          # link: /posts/my-first-post/
+          # link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+          link: /posts/apex_putter/
         badges:
           - "Robotic Manipulation"
           - "Computer Vision"          
@@ -434,8 +434,8 @@ params:
         image: /images/projects/VIO/poseGraph.gif
         featured:
           name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
-          # link: /posts/my-first-post/
+          # link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+          link: /posts/vio/
         badges:
           - "Computer Vision"          
           - "OpenCV"
@@ -454,8 +454,7 @@ params:
         image: /images/projects/tennis.gif
         featured:
           name: Read More
-          # link: /posts/my-third-post/
-          link: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
+          link: /posts/rl_tennis/
         badges:
           - "Deep Reinforcement Learning"
           - "DDPG"
