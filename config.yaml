@@ -38,39 +38,39 @@ Menus:
       parent: dropdown
       weight: 1
     - identifier: dropdown2
-      title: AI/ML
-      name: AI/ML
-      url: /#
+      title: AI/ML/RL
+      name: AI/ML/RL
+      url: "#dropdown2"
       parent: dropdown
       weight: 2
     - identifier: dropdown3
       title: SLAM
       name: SLAM
-      url: /#
+      url: "#dropdown3"
       parent: dropdown
       weight: 3
     - identifier: dropdown4
       title: Multi-Agent Systems
       name: Multi-Agent Systems
-      url: /#
+      url: "#dropdown4"
       parent: dropdown
       weight: 4
     - identifier: dropdown5
       title: Manipulation & Control
       name: Manipulation & Control
-      url: /#
+      url: "#dropdown5"
       parent: dropdown
       weight: 5
     - identifier: dropdown6
       title: Path planning & Navigation
       name: Path planning & Navigation
-      url: /#
+      url: "#dropdown6"
       parent: dropdown
       weight: 6
     - identifier: dropdown7
       title: Fundamentals 
       name: Fundamentals
-      url: /#
+      url: "#dropdown7"
       parent: dropdown
       weight: 7
 
@@ -775,7 +775,7 @@ params:
   specificProjects:
     enable: true
     dropdown1:
-      title: "Perception-Vision Work"
+      title: "Perception-Vision"
       items:
         - title: Collaborative SLAM for Quadruped Fleet
           content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
@@ -793,6 +793,148 @@ params:
           links:
               - icon: fab fa-github
                 url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+    dropdown2:
+      title: "AI/ML/RL"
+      items:
+        - title: Collcccccccaborative SLAM for Quadruped Fleet
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"
+          links:
+              - icon: fab fa-github
+                url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+    dropdown3:
+      title: "Localization and Mapping"
+      items:
+        - title: Collaborative SLAM for Quadruped Fleet
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"
+          links:
+              - icon: fab fa-github
+                url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+    dropdown4:
+      title: "Multi-Agent Systems"
+      items:
+        - title: Collaborative SLAM for Quadruped Fleet
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"
+          links:
+              - icon: fab fa-github
+                url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+
+    dropdown5:
+      title: "Manipulation and Control"
+      items:
+        - title: Collaborative SLAM for Quadruped Fleet
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"
+          links:
+              - icon: fab fa-github
+                url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+
+
+    dropdown6:
+      title: "Path-Planning and Navigation"
+      items:
+        - title: Collaborative SLAM for Quadruped Fleet
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"
+          links:
+              - icon: fab fa-github
+                url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+
+    dropdown7:
+      title: "Fundamentals"
+      items:
+        - title: Collaborative SLAM for Quadruped Fleet
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"
+          links:
+              - icon: fab fa-github
+                url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

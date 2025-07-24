@@ -1,28 +1,13 @@
 <!-- <p>Template Loaded: specificProjects.html</p> -->
-{{ $identifier := .Params.identifier | default "dropdown1" }}
 
-<!-- <p>Identifier: {{ $identifier }}</p>
-<pre>{{ jsonify .Site.Params.specificProjects }}</pre> -->
-
-{{ $projects := index .Site.Params.specificProjects $identifier }}
-<section id="{{ $identifier }}" class="py-4">
-
-<!-- <pre>{{ jsonify .Params }}</pre>
-
-
-{{ if $projects }}
-  <p>Projects Found: {{ len $projects.items }}</p> 
-{{ else }}
-  <p>No project data found for identifier: {{ $identifier }}</p>
-{{ end }} -->
-
-
-  {{ if and (default false .Site.Params.specificProjects.enable) $projects }}
-  <!-- <section id="specific-projects" class="py-4"> -->
+<!-- Loop through all dropdowns in specificProjects -->
+{{ range $key, $dropdown := .Site.Params.specificProjects }}
+  {{ if ne $key "enable" }} <!-- Skip the "enable" key -->
+  <section id="{{ $key }}" class="py-4">
     <div class="container">
-      <h3 class="text-center">{{ $projects.title }}</h3>
+      <h3 class="text-center">{{ $dropdown.title }}</h3>
       <div class="d-flex flex-wrap justify-content-center">
-        {{ range $projects.items }}
+        {{ range $dropdown.items }}
         <div class="card m-3" style="width: 300px;">
           <img class="card-img-top" src="{{ .image }}" alt="{{ .title }}">
           <div class="card-body">
@@ -43,7 +28,6 @@
         {{ end }}
       </div>
     </div>
-</section>
-{{ else }}
-<p>No projects found for this category.</p>
+  </section>
+  {{ end }}
 {{ end }}
