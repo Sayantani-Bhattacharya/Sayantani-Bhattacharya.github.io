@@ -24,7 +24,6 @@ markup:
 
 Menus:
   main:
-
     # Dropdown menu:
     - identifier: dropdown
       title: Core competencies
@@ -35,7 +34,7 @@ Menus:
     - identifier: dropdown1
       title: Perception/Vision
       name: Perception/Vision
-      url: /#
+      url: "#dropdown1"
       parent: dropdown
       weight: 1
     - identifier: dropdown2
@@ -57,8 +56,8 @@ Menus:
       parent: dropdown
       weight: 4
     - identifier: dropdown5
-      title: Manipulation and Control
-      name: Manipulation and Control
+      title: Manipulation & Control
+      name: Manipulation & Control
       url: /#
       parent: dropdown
       weight: 5
@@ -74,7 +73,6 @@ Menus:
       url: /#
       parent: dropdown
       weight: 7
-
 
     - identifier: Publications
       name: Publications
@@ -111,8 +109,6 @@ Menus:
       #   # Single or New Tab: The newPage field determines if the link opens in the same tab or a new one.
       #   download: true
       #   newPage: true
-
-
 
 params:
   title: "Hugo Profile"
@@ -178,6 +174,8 @@ params:
       disableEducation: false
       disableProjects: false
       disableFeaturedProjects: false
+      disableSpecificlProjects: false
+      disableProjectsData: false
       disableAchievements: false
       disableContact: false
       # Resume Download: When you click on the Resume menu item, the browser will download the file specified in the url field.
@@ -367,6 +365,7 @@ params:
   # #     - title: Google Summer of Code
   # #       content: Contributed to a open source project.
   # #       url: https://example.com
+
   featuredprojects:
     enable: true
     # title: "Custom Name"
@@ -466,7 +465,7 @@ params:
             url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Neural-Net-Netters%0D%0A%0D%0AThanks!
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
-     
+
   # projects
   projects:
     enable: true
@@ -772,6 +771,34 @@ params:
       #   links:
       #     - icon: fab fa-github
       #       url: https://github.com/gurusabarish/HugoProfileV2
+
+  specificProjects:
+    enable: true
+    dropdown1:
+      title: "Perception-Vision Work"
+      items:
+        - title: Collaborative SLAM for Quadruped Fleet
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"
+          links:
+              - icon: fab fa-github
+                url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+
+
+
+
+
+
 
   # #Contact
   # contact:

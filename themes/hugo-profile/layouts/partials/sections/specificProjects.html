@@ -1,0 +1,49 @@
+<!-- <p>Template Loaded: specificProjects.html</p> -->
+{{ $identifier := .Params.identifier | default "dropdown1" }}
+
+<!-- <p>Identifier: {{ $identifier }}</p>
+<pre>{{ jsonify .Site.Params.specificProjects }}</pre> -->
+
+{{ $projects := index .Site.Params.specificProjects $identifier }}
+<section id="{{ $identifier }}" class="py-4">
+
+<!-- <pre>{{ jsonify .Params }}</pre>
+
+
+{{ if $projects }}
+  <p>Projects Found: {{ len $projects.items }}</p> 
+{{ else }}
+  <p>No project data found for identifier: {{ $identifier }}</p>
+{{ end }} -->
+
+
+  {{ if and (default false .Site.Params.specificProjects.enable) $projects }}
+  <!-- <section id="specific-projects" class="py-4"> -->
+    <div class="container">
+      <h3 class="text-center">{{ $projects.title }}</h3>
+      <div class="d-flex flex-wrap justify-content-center">
+        {{ range $projects.items }}
+        <div class="card m-3" style="width: 300px;">
+          <img class="card-img-top" src="{{ .image }}" alt="{{ .title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ .title }}</h5>
+            <p class="card-text">{{ .content }}</p>
+            <div class="card-footer">
+              {{ range .links }}
+              <a href="{{ .url }}" target="_blank">
+                <i class="{{ .icon }}"></i>
+              </a>
+              {{ end }}
+              {{ if .featured }}
+              <a class="btn btn-sm float-end" href="{{ .featured.link }}" target="_blank">{{ .featured.name }}</a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+</section>
+{{ else }}
+<p>No projects found for this category.</p>
+{{ end }}

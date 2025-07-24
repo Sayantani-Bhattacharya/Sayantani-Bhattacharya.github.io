@@ -20,3 +20,7 @@ draft = false
 
 
 <object data="/docs/Sayantani_Resume_2025.pdf" width="1200" height="1200" type="application/pdf"></object>
+
+<!-- 
+To remove table of contents.
+l 

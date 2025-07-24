@@ -130,6 +130,15 @@
                     </li>
                     {{ end }}
 
+                    <!-- {{ if and (.Site.Params.specificProjects.enable | default false) (not (.Site.Params.navbar.menus.disableSpecificProjects | default false)) }}
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="{{ .Site.BaseURL | relURL }}#specificProjects"
+                            aria-label="specificProjects">
+                            {{ .Site.Params.specificProjects.title | default "Specific Projects" }}
+                        </a>
+                    </li>
+                    {{ end }} -->
+
                     
 
                     {{ if and (.Site.Params.achievements.enable | default false) (not (.Site.Params.navbar.menus.disableAchievements | default false)) }}
