@@ -16,11 +16,12 @@ draft = false
 *Full-time*  
 **Aug 2023 – Jun 2024 · 11 mos**
 
-- Developed and conducted first-round testing of the Behaviour Tree, Task Scheduler, Assignment, and hardware client's TCP interface modules for the AMR fleet.
-- Responsible for client demos for the fleet system and remote site support.
-- Worked on heuristic, graph-based, and linear programming-based solutions for multi-agent path-finding problems.
-- Developed modules for velocity profiling, simulated WCS pipeline, topological feature extraction, path-follower, Bézier curves, and simulated motion model for the AGV Fleet.
+- ​Developed Behavior tree, Task-Scheduler, Assignment and TCP interface of warehouse material handling fleet.
+- Formulated heuristic, graph-based & linear programming based solutions for multi-agent path-finding problems.
+- Developed and conducted first-round testing of the Behaviour Tree, Task Scheduler, Assignment, and hardware client's TCP interface modules for the AMR fleet in C++.
+- Developed modules for velocity profiling, simulated WCS pipeline, topological feature extraction, path-follower, Bézier curves, and simulated motion model for the AGV Fleet in C++ and Python.
 - Refactored code sections to enhance performance and reduce computation time.
+- Responsible for client demos for the fleet system and remote site support
 <div style="margin-top: 10px; margin-bottom: 10px;">
     <a href="https://ieeexplore.ieee.org/document/10384309" target="_blank" style="text-decoration: none; color: inherit;">
         <img src="/images/ieee_logo.png" alt="IEEE Xplore" width="60" height="auto" style="vertical-align: middle;">
@@ -34,8 +35,8 @@ draft = false
 **Mobile Robotics GET**  
 *Aug 2022 – Jul 2023 · 1 yr*
 
-- Developed an end-to-end module using MILP (Mixed Integer Linear Programming) for deadlock avoidance and priority-based robot-task assignment for the MPV (Mobile Picking Vehicle) Fleet (C++), integrated into the fleet stack.
-- Built the entire MPV Fleet simulation configurator from scratch with the Product Team (Python, PyQt, NetworkX), reducing Sales Dept. throughput estimation from 2 days to 3 hours.
+- Developed an end-to-end module using MILP (Mixed Integer Linear Programming) for deadlock avoidance and priority-based robot-task assignment for multi-carton picking robot (MPV) fleet using C++ and lp solver.
+- Built the entire MPV Fleet operation simulation tool from scratch with the Product Team (Python, PyQt), reducing throughput estimation time from 2 days to 3 hours.
 - Generated throughput simulations for AGVs based on specific client requirements for the Sales team.
 
 <div style="text-align: center; margin-bottom: 20px;">

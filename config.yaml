@@ -508,9 +508,9 @@ params:
         content: Detecing and Tracking a moving object in pitch dark.
         image: /images/projects/Thermal/ThermalSeg.gif
         featured:
-          # name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation
-          # link: /posts/my-first-post/
+          name: Read More
+          # link: https://github.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation
+          link: /posts/low-light/
         badges:
           - "Computer Vision"
           - "OpenCV"
@@ -610,9 +610,9 @@ params:
         content: A Multi-player game that scores players on how accurate a defined race track is followed.
         image: /images/projects/VIO/Turtle_VIO.gif
         featured:
-          # name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
-          # link: /posts/my-first-post/
+          name: Read More
+          # link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+          link: /posts/f_one/
         badges:
           - "Zed SDK"
           - "Visual-Inertial Odometry"
@@ -862,9 +862,9 @@ params:
           content: Detecing and Tracking a moving object in pitch dark.
           image: /images/projects/Thermal/ThermalSeg.gif
           featured:
-            # name: Read More
-            link: https://github.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation
-            # link: /posts/my-first-post/
+            name: Read More
+            # link: https://github.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation
+            link: /posts/low-light/
           badges:
             - "Computer Vision"
             - "OpenCV"
@@ -881,9 +881,9 @@ params:
           content: A Multi-player game that scores players on how accurate a defined race track is followed.
           image: /images/projects/VIO/Turtle_VIO.gif
           featured:
-            # name: Read More
-            link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
-            # link: /posts/my-first-post/
+            name: Read More
+            # link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+            link: /posts/f_one/
           badges:
             - "Zed SDK"
             - "Visual-Inertial Odometry"
@@ -1056,9 +1056,8 @@ params:
           content: A Multi-player game that scores players on how accurate a defined race track is followed.
           image: /images/projects/VIO/Turtle_VIO.gif
           featured:
-            # name: Read More
-            link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
-            # link: /posts/my-first-post/
+            name: Read More
+            link: /posts/f_one/
           badges:
             - "Zed SDK"
             - "Visual-Inertial Odometry"
