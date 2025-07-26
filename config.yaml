@@ -428,6 +428,20 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Apex_Putter
 
+      - title: Fleet Management System for AMRs and AGVs.
+        content: Developed Fleet Software in Addverb (warehouse robotics company).
+        image: /images/projects/addverb/addverb.gif
+        featured:
+          name: Read More
+          link: /posts/addverb/
+        badges:
+          - "Multi-Agent Systems"
+          - "Task-Scheduling"
+          - "C++"
+          - "Path-Planning"
+          - "Optimization"
+          - "Concurrency"
+
       - title: Real Time Visual Pose Graph Estimation
         content: Modular system that extracts raw stereo image data frames to generate and visualize the pose graph.
         image: /images/projects/VIO/poseGraph.gif
@@ -1059,6 +1073,19 @@ params:
     dropdown4:
       title: "Multi-Agent Systems"
       items:
+        - title: Fleet Management System for AMRs and AGVs.
+          content: Developed Fleet Software in Addverb (warehouse robotics company).
+          image: /images/projects/addverb/addverb.gif
+          featured:
+            name: Read More
+            link: /posts/addverb/
+          badges:
+            - "Multi-Agent Systems"
+            - "Task-Scheduling"
+            - "C++"
+            - "Path-Planning"
+            - "Optimization"
+            - "Concurrency"
         - title: Reinforcement Learning Agents Playing Table Tennis
           content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
           image: /images/projects/tennis.gif
@@ -1224,6 +1251,19 @@ params:
     dropdown6:
       title: "Path-Planning and Navigation"
       items:
+        - title: Fleet Management System for AMRs and AGVs.
+          content: Developed Fleet Software in Addverb (warehouse robotics company).
+          image: /images/projects/addverb/addverb.gif
+          featured:
+            name: Read More
+            link: /posts/addverb/
+          badges:
+            - "Multi-Agent Systems"
+            - "Task-Scheduling"
+            - "C++"
+            - "Path-Planning"
+            - "Optimization"
+            - "Concurrency"
         - title: Deep Q-Learning based Navigation.
           content: Trained an agent to navigate (and collect bananas!) in a large, square world.
           image: /images/projects/DQN_nav.gif
@@ -1241,7 +1281,19 @@ params:
             - icon: fa fa-envelope
               url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/DQN-Based-Navigation%0D%0A%0D%0AThanks!          
             - icon: fab fa-github
-              url: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
+              url: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation            
+        - title: Open Street Map Route Planner.
+          content: A* based search algorithm to find the shortest path between two points in a map.
+          image: /images/projects/map.png
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
+          badges:
+            - "C++"
+            - "Path planning"
+          links:
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
         - title: Autonomous Exploration for Quadruped Fleet #Decentralised.
           content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
           image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
@@ -1260,19 +1312,7 @@ params:
             - icon: fa fa-envelope
               url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
             - icon: fab fa-github
-              url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs     
-        - title: Open Street Map Route Planner.
-          content: A* based search algorithm to find the shortest path between two points in a map.
-          image: /images/projects/map.png
-          featured:
-            # name: Read More
-            link: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
-          badges:
-            - "C++"
-            - "Path planning"
-          links:
-            - icon: fab fa-github
-              url: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
+              url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
     dropdown7:
       title: "Fundamentals"
       items:
