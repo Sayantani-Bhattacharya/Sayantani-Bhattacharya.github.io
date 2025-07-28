@@ -3,7 +3,7 @@ title = 'Real-Time Pose Graph Estimation'
 date = 2025-07-05
 draft = false
 +++
-<div style="text-align:center;">Author: Sayantani Bhattacharya, Sharwin Patil</div> 
+<div style="text-align:center;">Authors: Sayantani Bhattacharya, Sharwin Patil</div> 
 
 <!-- <div style="text-align: center; margin-bottom: 30px;">
     <img src="/images/projects/Quadruped_Fleet/QuadrupedFleet.gif" alt="Robot Fleet" width="200" height="auto">
@@ -83,10 +83,10 @@ optimization graph.
 
 <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
     <div>
-        <img src="/images/projects/VIO/hw1.png" alt="ORB" width="auto" height="500">
+        <img src="/images/projects/VIO/hw1.png" alt="ORB" width="auto" height="400">
     </div>
     <div>
-        <img src="/images/projects/VIO/hw2.png" alt="SIFT" width="auto" height="500">
+        <img src="/images/projects/VIO/hw2.png" alt="SIFT" width="auto" height="400">
     </div>
 </div>
 

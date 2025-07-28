@@ -411,10 +411,9 @@ params:
 
       - title: Mini Golf using Franka Arm
         content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
-        image: /images/projects/golf/golf.gif
+        image: /images/projects/golf/golf_1.gif
         featured:
           name: Read More
-          # link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
           link: /posts/apex_putter/
         badges:
           - "Robotic Manipulation"
@@ -447,7 +446,6 @@ params:
         image: /images/projects/VIO/poseGraph.gif
         featured:
           name: Read More
-          # link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
           link: /posts/vio/
         badges:
           - "Computer Vision"          
@@ -825,7 +823,7 @@ params:
               # url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs      
         - title: Mini Golf using Franka Arm
           content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
-          image: /images/projects/golf/golf.gif
+          image: /images/projects/golf/golf_1.gif
           featured:
             name: Read More
             # link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
@@ -1178,7 +1176,7 @@ params:
       items:
         - title: Mini Golf using Franka Arm
           content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
-          image: /images/projects/golf/golf.gif
+          image: /images/projects/golf/golf_1.gif
           featured:
             name: Read More
             # link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
