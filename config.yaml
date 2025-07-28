@@ -462,7 +462,7 @@ params:
 
       - title: Reinforcement Learning Agents Playing Table Tennis
         content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
-        image: /images/projects/tennis.gif
+        image: /images/projects/MARL_tennis/tennis.gif
         featured:
           name: Read More
           link: /posts/rl_tennis/
@@ -898,7 +898,7 @@ params:
       items:
         - title: Reinforcement Learning Agents Playing Table Tennis
           content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
-          image: /images/projects/tennis.gif
+          image: /images/projects/MARL_tennis/tennis.gif
           featured:
             name: Read More
             link: /posts/rl_tennis/
@@ -1085,7 +1085,7 @@ params:
             - "Concurrency"
         - title: Reinforcement Learning Agents Playing Table Tennis
           content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
-          image: /images/projects/tennis.gif
+          image: /images/projects/MARL_tennis/tennis.gif
           featured:
             name: Read More
             link: /posts/rl_tennis/
