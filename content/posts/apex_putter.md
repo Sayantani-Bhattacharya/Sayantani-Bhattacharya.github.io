@@ -13,7 +13,7 @@ draft = false
 ## Overview
 
 <div style="text-align: center; margin-bottom: 15px; margin-top: -20px;">
-    <img src="/images/projects/golf/golf_comp.gif" alt="SealBot" width="700" height="auto">
+    <img src="/images/projects/golf/apex_comp.gif" alt="SealBot" width="700" height="auto">
 </div>
 
 Apex Putter system integrates a Franka Emika Panda arm to play mini-golf. The goal is to have the robot sense a golf ball and hole, plan a putt, and execute it precisely. What a human child can do by “eyeballing” a putt requires precision control of position and timing in a robot. The project turns a simple game into a challenging control problem requiring integrated sensing (camera-based vision) and trajectory planning.
