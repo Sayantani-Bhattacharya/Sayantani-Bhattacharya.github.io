@@ -24,6 +24,56 @@ markup:
 
 Menus:
   main:
+    # Dropdown menu:
+    - identifier: dropdown
+      title: My-Robotics Stack # Core Expertise # My-Robotics Stack
+      newPage: false
+      name: My-Robotics Stack
+      weight: 2
+    # child to main dropdown.
+    - identifier: dropdown1
+      title: Perception/Vision
+      name: Perception/Vision
+      url: "/#dropdown1"
+      parent: dropdown
+      weight: 1
+    - identifier: dropdown2
+      title: AI/ML/RL
+      name: AI/ML/RL
+      url: "/#dropdown2"
+      parent: dropdown
+      weight: 2
+    - identifier: dropdown3
+      title: SLAM
+      name: SLAM
+      url: "/#dropdown3"
+      parent: dropdown
+      weight: 3
+    - identifier: dropdown4
+      title: Multi-Agent Systems
+      name: Multi-Agent Systems
+      url: "/#dropdown4"
+      parent: dropdown
+      weight: 4
+    - identifier: dropdown5
+      title: Manipulation & Control
+      name: Manipulation & Control
+      url: "/#dropdown5"
+      parent: dropdown
+      weight: 5
+    - identifier: dropdown6
+      title: Path planning & Navigation
+      name: Path planning & Navigation
+      url: "/#dropdown6"
+      parent: dropdown
+      weight: 6
+    - identifier: dropdown7
+      title: Fundamentals 
+      name: Fundamentals
+      url: "/#dropdown7"
+      parent: dropdown
+      weight: 7
+
     - identifier: Publications
       name: Publications
       title: Publications
@@ -59,25 +109,6 @@ Menus:
       #   # Single or New Tab: The newPage field determines if the link opens in the same tab or a new one.
       #   download: true
       #   newPage: true
-
-  # Dropdown menu:
-  #   - identifier: dropdown
-  #     title: Example dtrue
-      # newPage: falseropdown menu
-  #     name: Dropdown
-  #     weight: 3
-  #     - identifier: dropdown1
-  #       title: example dropdown 1
-  #       name: example 1
-  #       url: /#
-  #       parent: dropdown
-  #       weight: 1
-  #     - identifier: dropdown2
-  #       title: example dropdown 2
-  #       name: example 2
-  #       url: /#
-  #       parent: dropdown
-  #       weight: 2
 
 params:
   title: "Hugo Profile"
@@ -143,6 +174,8 @@ params:
       disableEducation: false
       disableProjects: false
       disableFeaturedProjects: false
+      disableSpecificlProjects: false
+      disableProjectsData: false
       disableAchievements: false
       disableContact: false
       # Resume Download: When you click on the Resume menu item, the browser will download the file specified in the url field.
@@ -332,6 +365,7 @@ params:
   # #     - title: Google Summer of Code
   # #       content: Contributed to a open source project.
   # #       url: https://example.com
+
   featuredprojects:
     enable: true
     # title: "Custom Name"
@@ -377,11 +411,10 @@ params:
 
       - title: Mini Golf using Franka Arm
         content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
-        image: /images/projects/golf/golf.gif
+        image: /images/projects/golf/golf_1.gif
         featured:
           name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
-          # link: /posts/my-first-post/
+          link: /posts/apex_putter/
         badges:
           - "Robotic Manipulation"
           - "Computer Vision"          
@@ -394,13 +427,26 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Apex_Putter
 
+      - title: Fleet Management System for AMRs and AGVs.
+        content: Developed Fleet Software in Addverb (warehouse robotics company).
+        image: /images/projects/addverb/addverb.gif
+        featured:
+          name: Read More
+          link: /posts/addverb/
+        badges:
+          - "Multi-Agent Systems"
+          - "Task-Scheduling"
+          - "C++"
+          - "Path-Planning"
+          - "Optimization"
+          - "Concurrency"
+
       - title: Real Time Visual Pose Graph Estimation
         content: Modular system that extracts raw stereo image data frames to generate and visualize the pose graph.
         image: /images/projects/VIO/poseGraph.gif
         featured:
           name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
-          # link: /posts/my-first-post/
+          link: /posts/vio/
         badges:
           - "Computer Vision"          
           - "OpenCV"
@@ -416,11 +462,10 @@ params:
 
       - title: Reinforcement Learning Agents Playing Table Tennis
         content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
-        image: /images/projects/tennis.gif
+        image: /images/projects/MARL_tennis/tennis.gif
         featured:
           name: Read More
-          # link: /posts/my-third-post/
-          link: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
+          link: /posts/rl_tennis/
         badges:
           - "Deep Reinforcement Learning"
           - "DDPG"
@@ -433,7 +478,6 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
 
-      
   # projects
   projects:
     enable: true
@@ -462,9 +506,9 @@ params:
         content: Detecing and Tracking a moving object in pitch dark.
         image: /images/projects/Thermal/ThermalSeg.gif
         featured:
-          # name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation
-          # link: /posts/my-first-post/
+          name: Read More
+          # link: https://github.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation
+          link: /posts/low-light/
         badges:
           - "Computer Vision"
           - "OpenCV"
@@ -521,8 +565,6 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Chatbot
 
-#  -----------------------------------------------------------------------------------------------------
-
       - title: Deep RL Based Arm Control.
         content: Trained multiple double-jointed arms to move to target locations.
         image: /images/projects/DRL_arm.gif
@@ -566,9 +608,9 @@ params:
         content: A Multi-player game that scores players on how accurate a defined race track is followed.
         image: /images/projects/VIO/Turtle_VIO.gif
         featured:
-          # name: Read More
-          link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
-          # link: /posts/my-first-post/
+          name: Read More
+          # link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+          link: /posts/f_one/
         badges:
           - "Zed SDK"
           - "Visual-Inertial Odometry"
@@ -602,8 +644,6 @@ params:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/RNN-Language-Model
 
-#  -----------------------------------------------------------------------------------------------------
-
       - title: Traffic-Flow-Simulation.
         content: Built a suitable and thread-safe communication protocol between vehicles and intersections to complete the simulation.
         image: /images/projects/traffic_simulation.gif
@@ -618,12 +658,7 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/Sayantani-Bhattacharya/Traffic-Flow-Simulation
-
-
-     
-
-
-       
+      
       # - title: Mini Quadraped Motion.
       #   content: A mini quadraped robot programmed to walk, trot, and run using inverse kinematics and gait planning.
       #   image: /images/projects/petoi/petoiOG.gif
@@ -743,6 +778,623 @@ params:
       #   links:
       #     - icon: fab fa-github
       #       url: https://github.com/gurusabarish/HugoProfileV2
+
+  specificProjects:
+    enable: true
+    dropdown1:
+      title: "Perception-Vision"
+      items:
+        - title: Collaborative SLAM for Quadruped Fleet
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"          
+            - "Point cloud library"          
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs     
+        - title: Bio-Inspired Underwater Perception 
+          content: System for rover to follow a prey underwater, using sensory information of a seal whisker-like structure.
+          image: /images/projects/SealBot/sealbot.gif
+          featured:
+            name: Read More
+            link: /posts/rov/
+          badges:
+            - "Perception"
+            - "Computer Vision"
+            - "CAD"
+            - "ROS 2"  
+            - "Blue OS"        
+            - "C++"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              # url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs      
+        - title: Mini Golf using Franka Arm
+          content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
+          image: /images/projects/golf/golf_1.gif
+          featured:
+            name: Read More
+            # link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+            link: /posts/apex_putter/
+          badges:
+            - "Robotic Manipulation"
+            - "Computer Vision"          
+            - "ROS 2"
+            - "Move Group API"
+            - "Python"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Apex_Putter%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+        - title: Pen Grasping Challenge.
+          content: PincherX100 Arm programmed to detect, calibrate, manipulate and grasp a pen using OpenCV and depth sensing via Intel RealSense D435i.
+          image: /images/projects/pen.gif
+          featured:
+            # name: Read More
+            # link: /posts/my-fourth-post/
+            link: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
+          badges:
+            - "OpenCV"
+            - "Robotic Manipulation"
+            - "Computer Vision"
+            - "Python"          
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/ThePenChallenge%0D%0A%0D%0AThanks!          
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
+        - title: Low Light Object Tracking
+          content: Detecing and Tracking a moving object in pitch dark.
+          image: /images/projects/Thermal/ThermalSeg.gif
+          featured:
+            name: Read More
+            # link: https://github.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation
+            link: /posts/low-light/
+          badges:
+            - "Computer Vision"
+            - "OpenCV"
+            - "Perception"
+            - "Object Tracking"
+            - "Image Segmentation"
+            
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Thermal-Image-Segmentation
+        - title: F1 Ghost Car Racing using Visual-Inertial Odometry.
+          content: A Multi-player game that scores players on how accurate a defined race track is followed.
+          image: /images/projects/VIO/Turtle_VIO.gif
+          featured:
+            name: Read More
+            # link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+            link: /posts/f_one/
+          badges:
+            - "Zed SDK"
+            - "Visual-Inertial Odometry"
+            - "SLAM"
+            - "ROS 2"
+            - "C++"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+    dropdown2:
+      title: "AI/ML/RL"
+      items:
+        - title: Reinforcement Learning Agents Playing Table Tennis
+          content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
+          image: /images/projects/MARL_tennis/tennis.gif
+          featured:
+            name: Read More
+            link: /posts/rl_tennis/
+          badges:
+            - "Deep Reinforcement Learning"
+            - "DDPG"
+            - "Unity ML Agents"
+            - "Multi-Agent Systems"
+            - "Python"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Neural-Net-Netters%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
+        - title: Deep RL Based Arm Control.
+          content: Trained multiple double-jointed arms to move to target locations.
+          image: /images/projects/DRL_arm.gif
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control
+            # link: /posts/my-first-post/
+          badges:
+            - "Deep Reinforcement Learning"
+            - "DDPG"
+            - "Unity ML Agents"
+            - "Python"
+            - "Multi-Agent Systems"        
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control
+        - title: Bee Dance Swarm Intelligence.
+          content: Waggle dance communication of bee swams for optimal nectar collection using Mutli-Agent Reinforcement Learning.
+          image: /images/projects/BeeSwarm/BeeInitialRun.gif
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence
+            # link: /posts/my-first-post/
+          badges:
+            - "Multi-Agent Systems"
+            - "Reinforcement Learning"
+            - "Stable Baselines3"
+            - "PyTorch"
+            - "PPO"
+            - "Weights and Biases"
+            - "Pygame"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence               
+        - title: RNN Language Model
+          content: Predicting the next word from a sequence.
+          image: /images/projects/RNN_LM/RNN_LM.gif
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/RNN-Language-Model
+            # link: /posts/my-first-post/
+          badges:
+            - "Machine Learning"
+            - "Neural Networks"
+            - "PyTorch"
+            - "LSTM/GRU"
+            - "Natural Language Processing"
+            
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/RNN-Language-Model%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/RNN-Language-Model
+        - title: Deep Q-Learning based Navigation.
+          content: Trained an agent to navigate (and collect bananas!) in a large, square world.
+          image: /images/projects/DQN_nav.gif
+          featured:
+            # name: Read More
+            # link: /posts/my-fourth-post/
+            link: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
+          badges:
+            - "Reinforcement Learning"
+            - "Q-Learning"
+            - "Unity ML Agents"
+            - "Python"
+            - "Navigation"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/DQN-Based-Navigation%0D%0A%0D%0AThanks!          
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
+        - title: CNN Sketch Classifier.
+          content: A Convolutional Neural Network trained to classify sketches using dataset containing ~20,000 sketches distriburted over 250 object categories.
+          image: /images/projects/sketch.gif
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier
+            # link: /posts/my-first-post/
+          badges:
+            - "Machine Learning"
+            - "Python"
+            - "tensorflow"
+            - "Neural Nerworks"
+            - "Convolution"
+            - "Image Classification"
+            - "Computer Vision"
+
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/CNN_Sketch_Classifier    
+    dropdown3:
+      title: "Localization and Mapping"
+      items:
+        - title: Collaborative SLAM for Quadruped Fleet #Decentralised.
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"          
+            - "Point cloud library"          
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs     
+        - title: Real Time Visual Pose Graph Estimation
+          content: Modular system that extracts raw stereo image data frames to generate and visualize the pose graph.
+          image: /images/projects/VIO/poseGraph.gif
+          featured:
+            name: Read More
+            # link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+            link: /posts/vio/
+          badges:
+            - "Computer Vision"          
+            - "OpenCV"
+            - "ORB/SIFT"
+            - "ROS 2"
+            - "Concurrency"
+            - "C++"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+        - title: F1 Ghost Car Racing using Visual-Inertial Odometry.
+          content: A Multi-player game that scores players on how accurate a defined race track is followed.
+          image: /images/projects/VIO/Turtle_VIO.gif
+          featured:
+            name: Read More
+            link: /posts/f_one/
+          badges:
+            - "Zed SDK"
+            - "Visual-Inertial Odometry"
+            - "SLAM"
+            - "ROS 2"
+            - "C++"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+    dropdown4:
+      title: "Multi-Agent Systems"
+      items:
+        - title: Fleet Management System for AMRs and AGVs.
+          content: Developed Fleet Software in Addverb (warehouse robotics company).
+          image: /images/projects/addverb/addverb.gif
+          featured:
+            name: Read More
+            link: /posts/addverb/
+          badges:
+            - "Multi-Agent Systems"
+            - "Task-Scheduling"
+            - "C++"
+            - "Path-Planning"
+            - "Optimization"
+            - "Concurrency"
+        - title: Reinforcement Learning Agents Playing Table Tennis
+          content: Traning two RL Agents to collaborate with each other in a game of table tennis to optimize the game time, while competing to win.
+          image: /images/projects/MARL_tennis/tennis.gif
+          featured:
+            name: Read More
+            link: /posts/rl_tennis/
+          badges:
+            - "Deep Reinforcement Learning"
+            - "DDPG"
+            - "Unity ML Agents"
+            - "Multi-Agent Systems"
+            - "Python"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Neural-Net-Netters%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Neural-Net-Netters
+        - title: Collaborative SLAM for Quadruped Fleet #Decentralised.
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"          
+            - "Point cloud library"          
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs     
+        - title: Bee Dance Swarm Intelligence.
+          content: Waggle dance communication of bee swams for optimal nectar collection using Mutli-Agent Reinforcement Learning.
+          image: /images/projects/BeeSwarm/BeeInitialRun.gif
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence
+            # link: /posts/my-first-post/
+          badges:
+            - "Multi-Agent Systems"
+            - "Reinforcement Learning"
+            - "Stable Baselines3"
+            - "PyTorch"
+            - "PPO"
+            - "Weights and Biases"
+            - "Pygame"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/DancingBeeSwarmIntelligence
+        - title: Traffic-Flow-Simulation.
+          content: Built a suitable and thread-safe communication protocol between vehicles and intersections to complete the simulation.
+          image: /images/projects/traffic_simulation.gif
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/Traffic-Flow-Simulation
+          badges:
+            - "C++"
+            - "Linux"
+            - "Concurrency"
+            - "Multi-Agent Systems"
+          links:
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Traffic-Flow-Simulation
+        - title: Deep RL Based Arm Control.
+          content: Trained multiple double-jointed arms to move to target locations.
+          image: /images/projects/DRL_arm.gif
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control
+            # link: /posts/my-first-post/
+          badges:
+            - "Deep Reinforcement Learning"
+            - "DDPG"
+            - "Unity ML Agents"
+            - "Python"
+            - "Multi-Agent Systems"        
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control
+    dropdown5:
+      title: "Manipulation and Control"
+      items:
+        - title: Mini Golf using Franka Arm
+          content: A mini golf game where the Franka arm is programmed to plan trajectory to hit the ball into the detected hole.
+          image: /images/projects/golf/golf_1.gif
+          featured:
+            name: Read More
+            # link: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+            link: /posts/apex_putter/
+          badges:
+            - "Robotic Manipulation"
+            - "Computer Vision"          
+            - "ROS 2"
+            - "Move Group API"
+            - "Python"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Apex_Putter%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Apex_Putter
+        - title: Pen Grasping Challenge.
+          content: PincherX100 Arm programmed to detect, calibrate, manipulate and grasp a pen using OpenCV and depth sensing via Intel RealSense D435i.
+          image: /images/projects/pen.gif
+          featured:
+            # name: Read More
+            # link: /posts/my-fourth-post/
+            link: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
+          badges:
+            - "OpenCV"
+            - "Robotic Manipulation"
+            - "Computer Vision"
+            - "Python"          
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/ThePenChallenge%0D%0A%0D%0AThanks!          
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/ThePenChallenge
+        - title: Kuka YouBot trajectory planning and control.
+          content: A Kuka YouBot programmed to plan trajectory and control the arm to pick and place object in CopelliaSim.
+          image: /images/projects/youBot_sim/KUKA.gif
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project
+            # link: /posts/my-first-post/
+          badges:
+            - "Python"
+            - "Robotic Manipulation"
+            - "PID Control"
+            - "Trajectory Planning"
+            - "CoppeliaSim"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Manipulation_Capstone_Project       
+        # - title: Deep RL Based Arm Control.
+        #   content: Trained multiple double-jointed arms to move to target locations.
+        #   image: /images/projects/DRL_arm.gif
+        #   featured:
+        #     # name: Read More
+        #     link: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control
+        #     # link: /posts/my-first-post/
+        #   badges:
+        #     - "Deep Reinforcement Learning"
+        #     - "DDPG"
+        #     - "Unity ML Agents"
+        #     - "Python"
+        #     - "Multi-Agent Systems"        
+        #   links:
+        #     - icon: fa fa-envelope
+        #       url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+        #     - icon: fab fa-github
+        #       url: https://github.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control        
+    dropdown6:
+      title: "Path-Planning and Navigation"
+      items:
+        - title: Fleet Management System for AMRs and AGVs.
+          content: Developed Fleet Software in Addverb (warehouse robotics company).
+          image: /images/projects/addverb/addverb.gif
+          featured:
+            name: Read More
+            link: /posts/addverb/
+          badges:
+            - "Multi-Agent Systems"
+            - "Task-Scheduling"
+            - "C++"
+            - "Path-Planning"
+            - "Optimization"
+            - "Concurrency"
+        - title: Deep Q-Learning based Navigation.
+          content: Trained an agent to navigate (and collect bananas!) in a large, square world.
+          image: /images/projects/DQN_nav.gif
+          featured:
+            # name: Read More
+            # link: /posts/my-fourth-post/
+            link: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation
+          badges:
+            - "Reinforcement Learning"
+            - "Q-Learning"
+            - "Unity ML Agents"
+            - "Python"
+            - "Navigation"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/DQN-Based-Navigation%0D%0A%0D%0AThanks!          
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/DQN-Based-Navigation            
+        - title: Open Street Map Route Planner.
+          content: A* based search algorithm to find the shortest path between two points in a map.
+          image: /images/projects/map.png
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
+          badges:
+            - "C++"
+            - "Path planning"
+          links:
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Open-Street-Map-Route-Planner
+        - title: Autonomous Exploration for Quadruped Fleet #Decentralised.
+          content: System of multiple quadrupeds capable of autonomously exploring and mapping unknown regions.
+          image: /images/projects/Quadruped_Fleet/QuadrupedFleet.gif
+          featured:
+            name: Read More
+            link: /posts/quadruped-fleet/
+          badges:
+            - "Visual-SLAM"
+            - "LiDAR-SLAM"
+            - "High-Level Control"
+            - "Navigation"
+            - "C++"
+            - "ROS 2"          
+            - "Point cloud library"          
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Deep-RL-Arm-Control%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs
+    dropdown7:
+      title: "Fundamentals"
+      items:
+        - title: Linux System Monitor.
+          content: A system monitor system parallel to htop, that displays the CPU, process IDs, memory usage, etc of a Linux system.
+          image: /images/projects/monitor.png
+          featured:
+            # name: Read More
+            link: https://github.com/Sayantani-Bhattacharya/Linux-System-Monitor
+            # link: /posts/my-first-post/
+          badges:
+            - "C++"
+            - "Linux"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Linux-System-Monitor%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Linux-System-Monitor
+        - title: Dynamics modeling from scratch of jack bouncing within the moving box boundaries.
+          content: The simulation from scratch involves with Python and control theories, including Euler-Lagrangian equations and impact laws.
+          image: /images/projects/jack_in_box/sim.gif
+          featured:
+            name: Read More
+            link: /posts/jack-in-box/
+          badges:          
+            - "Euler-Lagrangian Equations"
+            - "Impact Equations"
+            - "Python"
+            - "Sympy"
+            - "Numpy"
+            - "Control"
+            - "Dynamics"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/2D_Dynamic_simulation%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/2D_Dynamic_simulation
+
+        - title: Real Time Visual Pose Graph Estimation
+          content: Modular system that extracts raw stereo image data frames to generate and visualize the pose graph.
+          image: /images/projects/VIO/poseGraph.gif
+          featured:
+            name: Read More
+            # link: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+            link: /posts/vio/
+          badges:
+            - "Computer Vision"          
+            - "OpenCV"
+            - "ORB/SIFT"
+            - "ROS 2"
+            - "Concurrency"
+            - "C++"
+          links:
+            - icon: fa fa-envelope
+              url: mailto:?subject=Exciting%20Project&body=Hi%20there,%0D%0A%0D%0ACheck%20out%20this%20project:%20https%3A%2F%2Fgithub.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation%0D%0A%0D%0AThanks!
+            - icon: fab fa-github
+              url: https://github.com/Sayantani-Bhattacharya/Visual-Pose-Graph-Estimation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   # #Contact

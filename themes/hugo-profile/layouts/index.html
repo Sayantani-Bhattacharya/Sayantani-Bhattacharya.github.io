@@ -17,7 +17,13 @@
 {{- partial "sections/experience.html" . -}}
 {{- partial "sections/education.html" . -}}
 {{- partial "sections/featuredProjects.html" . -}}
+
 {{- partial "sections/projects.html" . -}}
+{{- partial "sections/specificProjects.html" . -}}
+ 
+<!-- {{ if eq .Params.layout "specificProjects" }}
+  {{ partial "specificProjects.html" . }}
+{{ end }} -->
 {{- partial "sections/achievements.html" . -}}
 
 
