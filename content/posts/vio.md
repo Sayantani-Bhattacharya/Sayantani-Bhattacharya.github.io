@@ -33,7 +33,10 @@ The overall modular design allows easy swapping of components - for instance, ch
 This forms the core frontend processing, where each incoming frame is analyzed using the selected algorithm. The implementation provides interchangeable feature detectors through OpenCV's features2D module, with extracted features including both keypoint locations and their descriptors. These features are then published as visualized overlays on the original images for debugging purposes. For stereo configurations, matching features between left and right images enables 3D point triangulation using the known baseline distance.
 
 ### Mono Vs Stereo
-Initially we implemented monocular feature extraction and pose estimation using the rect topic of realsense. Then we switched to using both the right and left raw image frames, intrinsic and extrinsic camera data, and geometry (baseline). Then we used the PnP RANSAC to triangulate the feature keypoints and descriptors. And as you can see below the results (before tuning) show vast improvement with stereo based pose estimation.
+Initially we implemented monocular feature extraction and pose estimation using the rect topic of realsense. Then we switched to using both the right and left raw image frames, intrinsic and extrinsic camera data, and geometry (baseline). Then we used the PnP RANSAC to triangulate the feature keypoints and descriptors. 
+
+<!-- 
+And as you can see below the results (before tuning) show vast improvement with stereo based pose estimation. -->
 
 
 <!-- <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
