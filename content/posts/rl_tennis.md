@@ -41,7 +41,7 @@ This project interfaces directly with Unity via the ML-Agents Toolkit, rather th
 <div style="text-align: center; margin-bottom: 10px;">
     <img src="/images/projects/MARL_tennis/bd.png" alt="RL" width="300" height="auto">
     <p style="font-size: 20px; color: gray; margin-top: 5px;">
-        Decentralized Execution in Multi-Agent Tenni
+        Decentralized Execution
     </p>
 </div>
 
@@ -112,7 +112,7 @@ Each agent’s action space is continuous with 2 dimensions:
 - Horizontal movement (towards or away from the net)
 - Jump action (vertical paddle movement)
 
-These continuous controls are bounded (typically between –1 and +1) and are implemented via the Actor neural networks using a final tanh activation function. The z-axis (depth into/out of the screen) is fixed, so there's no forward-back movement.
+These continuous controls are bounded (between –1 and +1) and are implemented via the Actor neural networks using a final tanh activation function. The z-axis (depth into/out of the screen) is fixed, so there's no forward-back movement.
 
 ### Reward
 
