@@ -392,7 +392,7 @@ params:
 
       - title: Bio-Inspired Underwater Perception 
         content: System for rover to follow a prey underwater, using sensory information of a seal whisker-like structure.
-        image: /images/projects/SealBot/sealbot.gif
+        image: /images/projects/SealBot/portfolioSealBotMain.gif
         featured:
           name: Read More
           link: /posts/rov/
@@ -805,7 +805,7 @@ params:
               url: https://github.com/Sayantani-Bhattacharya/Multi-Hetero-Agent-Exploration-on-UnitreeGOs     
         - title: Bio-Inspired Underwater Perception 
           content: System for rover to follow a prey underwater, using sensory information of a seal whisker-like structure.
-          image: /images/projects/SealBot/sealbot.gif
+          image: /images/projects/SealBot/portfolioSealBotMain.gif
           featured:
             name: Read More
             link: /posts/rov/

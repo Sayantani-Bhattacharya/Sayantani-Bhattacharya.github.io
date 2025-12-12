@@ -165,11 +165,6 @@ V1 -> V2 Improvements:
         <img src="/images/projects/SealBot/v1_tag.jpeg" alt="SealBot" width="180" height="auto">
     </div>
 </div>
-<!-- 
-<div style="text-align: right; font-size: 20px; font-weight: bold; margin-right: 130px; margin-botton: 15px; ">Version 2:</div>
-<div style="text-align: right; margin-bottom: -80px;">
-    <img src="/images/projects/SealBot/v2_tag.jpeg" alt="SealBot" width="200" height="auto">
-</div> -->
 
 <div style="text-align: left; font-size: 20px; font-weight: bold; margin-botton: 15px; ">Version 2:</div>
 <div style="text-align: left; margin-bottom: 30px;">
@@ -180,7 +175,6 @@ V1 -> V2 Improvements:
     </div>
 </div>
 
-<!-- ### Complete System -->
 
 ## Decision-Model
 
@@ -189,22 +183,6 @@ Point of Interests are detected using singal processing tecchniques and which co
 <div style="text-align: center; margin-bottom: 30px;">
     <img src="/images/projects/SealBot/finalSealBot.gif" alt="SealBot" width="900" height="auto">
 </div>
-
-
-
-
-
-<!-- 
-
-## Next Quarter Plans:
-
-1. Develop perceptual models that ideally reflect the cognitive relation between the seal whisker’s sensory perception with its physical environment.
-    - Try learning based methods (AutoEncoder could be an option).
-    - Try classical methods (like Principal Component Analysis).
-2. Develop a method (maybe already exists, research that)  to create a latent/embedding space for the 6D pose data of all the 20 tags from april tag to be used as input to the model. 
-3. Understand  or develop a quantitative metric to analyse the accuracy of the models.
-4. Stretch goal would be to have real-time feedback from the model to control the SealBot movement to follow a dynamic moving object in front of it.  This however does not affect the main goal of developing the Model but can be used as a metric to understand the accuracy of the model. To note: When I tried real-time detection for the static tags, I faced topic synchronisation issues and the frame stream lags at times.[not sure how to fix it yet] [and the camera info publisher may need to be calibrated in water].   -->
-
 
 ## Future Possibilities
 
@@ -217,5 +195,5 @@ Point of Interests are detected using singal processing tecchniques and which co
 I would like to thank [Prof. Matthew Elwin](https://robotics.northwestern.edu/people/profiles/faculty/elwin-matt.html), [Dr. Mitra Hartmann](https://sense-lab.github.io/people.html) and [Kevin Kleczka](https://sense-lab.github.io/people.html) for their advice and guidance throughout the project. And [Ishani Narwankar](https://ishani-narwankar.github.io/) and [James Oubre](https://oubrejames.github.io/) for their work building the Rover from scratch.
 
 <div style="text-align: center; margin-bottom: 10px;">
-    <img src="/images/projects/SealBot/workingSealBot.jpeg" alt="SealBot" width="300" height="auto">
+    <img src="/images/projects/SealBot/workingSealBot.jpeg" alt="SealBot" width="400" height="auto">
 </div>
